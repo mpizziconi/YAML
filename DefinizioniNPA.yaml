@@ -43,7 +43,7 @@ components:
            * 'CONCLUSA' - 
            * 'COLLAUDATA' - L'Appalto si conclude con il collaudo dei lavori
       example: "IN LAVORAZIONE" 
-    SchedaTypeDef:
+    SchedaType:
       type: string
       minimum: 1
       enum: ['IN LAVORAZIONE', 'CONFERMATO', 'CANCELLATO', 'IN ATTESA DI PUBBLICAZIONE','IN PUBBLICAZIONE FERMATA','PUBBLICATO','NON AGGIUDICATO', 'AGGIUDICATO', 'IN SOTTOSCRIZIONE CONTRATTO','IN ESECUZIONE','ANNULLATO','SOSPESO', 'CONCLUSO','COLLAUDATO']
