@@ -168,8 +168,6 @@ components:
           type: string
           example: '1213DF56'
     SchedaPartecipantiType:
-        allOf: # estende il modello dati SchedaGenericType
-          - $ref: '#/components/schemas/SchedaGenericType'
         description: Oggetto che riporta tutti i dati della Scheda relativa Partecipanti
         type: object
         additionalProperties: false
