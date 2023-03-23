@@ -41,7 +41,6 @@ components:
           example: '2022-01-23T12:02:05Z'
     PaginazioneType:
       description: Oggetto per la paginazione dei risultati
-      type: object
       additionalProperties: false
       properties:
         totRows: 
