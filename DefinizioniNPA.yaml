@@ -15,6 +15,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        pippo: 
-          $ref: '#/components/schemas/SchedaPartecipantiType'
-          #- $ref: '#/components/schemas/SchedaAggiudicazioneType'
+        dataRisoluzione:
+          description: data creazione della pianificazione (A datetime specified by RF3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'
