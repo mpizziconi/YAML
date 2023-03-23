@@ -62,4 +62,4 @@ components:
            * 'SOSPESA' - L'esecuzione dei lavori di un appalto sono sospesi
            * 'CONCLUSA' - 
            * 'COLLAUDATA' - L'Appalto si conclude con il collaudo dei lavori
-      example: "IN LAVORAZIONE" 
+      example: "IN LAVORAZIONE"
