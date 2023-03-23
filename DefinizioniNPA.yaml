@@ -169,7 +169,7 @@ components:
           example: '1213DF56'
     SchedaPartecipantiType:
         allOf: # estende il modello dati SchedaGenericType
-          - $ref: 'https://raw.githubusercontent.com/flucaroni/yaml/main/DefinizioniNPA.yaml#/schemas/SchedaGenericType'
+          - $ref: '#/components/schemas/SchedaGenericType'
         description: Oggetto che riporta tutti i dati della Scheda relativa Partecipanti
         type: object
         additionalProperties: false
@@ -177,12 +177,12 @@ components:
           partecipanti:
             type: array
             items:
-              $ref: 'https://raw.githubusercontent.com/flucaroni/yaml/main/DefinizioniNPA.yaml#/schemas/PartecipanteType'
+              $ref: '#/components/schemas/PartecipanteType'
     SchedaAggiudicazioneType:
         allOf: # estende il modello dati SchedaGenericType
           - $ref: '#/components/schemas/SchedaGenericType'
     SchedaType:
       description: Scheda generica definita dal contesto in cui si trova l'appalto | Il Modello dati dinamico é presente al seguente URL https://github.com/anticorruzione/npa-docs/tree/3.04.7/PDF
       oneOf:
-        - $ref: '#/schemas/SchedaPartecipantiType'
-        - $ref: '#/schemas/SchedaAggiudicazioneType'
+        - $ref: '#/components/schemas/SchedaPartecipantiType'
+        - $ref: '#/components/schemas/SchedaAggiudicazioneType'
