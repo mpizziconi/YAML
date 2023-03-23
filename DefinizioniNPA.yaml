@@ -39,3 +39,24 @@ components:
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
+    PaginazioneType:
+      description: Oggetto per la paginazione dei risultati
+      type: object
+      additionalProperties: false
+      properties:
+        totRows: 
+          description: Numero totale di record risultante dalla ricerca
+          type: integer
+          format: int32
+        totPages: 
+          description: Numero totale di pagine risultanti dalla ricerca
+          type: integer
+          format: int32      
+        currentPage: 
+          description: Numero di pagina corrente
+          type: integer
+          format: int32
+        elementPage:
+          description: Numero di elementi per pagina
+          type: integer
+          format: int32
