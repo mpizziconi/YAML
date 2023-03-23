@@ -57,3 +57,17 @@ components:
           description: Numero di elementi per pagina
           type: integer
           format: int32
+    CigType:
+      description: coppia progressivoLotto-CIG
+      type: object
+      additionalProperties: false
+      properties:
+        progressivoLotto:
+          description: identificativo-progressivo definito da SA riportato nell'ESPD Request inviato
+          type: string
+        CIG:
+          description: identificativo univoco della gara-lotto definito da ANAC
+          type: string
+      example:
+          progressivoLotto: '0001'
+          CIG: 'EF89808D45'
