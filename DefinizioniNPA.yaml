@@ -68,6 +68,3 @@ components:
         CIG:
           description: identificativo univoco della gara-lotto definito da ANAC
           type: string
-      example:
-          progressivoLotto: '0001'
-          CIG: 'EF89808D45'
