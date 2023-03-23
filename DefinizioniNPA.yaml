@@ -9,6 +9,26 @@ info:
   version: 0.0.1
 components:
   schemas:
+    StatoLottoEnum:
+      type: string
+      minimum: 1
+      enum: ['IN LAVORAZIONE', 'CONFERMATO', 'CANCELLATO', 'IN ATTESA DI PUBBLICAZIONE','IN PUBBLICAZIONE FERMATA','PUBBLICATO','NON AGGIUDICATO', 'AGGIUDICATO', 'IN SOTTOSCRIZIONE CONTRATTO','IN ESECUZIONE','ANNULLATO','SOSPESO', 'CONCLUSO','COLLAUDATO']
+      description: >
+          stato- Stato in cui si trova il lotto:
+           * 'IN LAVORAZIONE' - Appalto inviato in aatesa di CIG
+           * 'CONFERMATA' - Appalto inviato in aatesa di CIG
+           * 'CANCELLATA' - CIG assegnato alla Gara-Lotto
+           * 'IN ATTESA DI PUBBLICAZIONE' - Appalto pubblicato in TED/Gazzetta Italiana/Altro
+           * 'PUBBLICATA' - Appalto pubblicato in TED/Gazzetta Italiana/Altro
+           * 'AGGIUDICATA' - Appalto aggiudicato a un Operatore Econominco
+           * 'NON AGGIUDICATA' - Appalto aggiudicato a un Operatore Econominco
+           * 'IN SOTTOSCRIZIONE CONTRATTO' - In fase di definizione del contratto dell'appalto 
+           * 'IN ESECUZIONE' - il contratto di un appalto é in esecuzione
+           * 'ANNULLATA' - il 
+           * 'SOSPESA' - L'esecuzione dei lavori di un appalto sono sospesi
+           * 'CONCLUSA' - 
+           * 'COLLAUDATA' - L'Appalto si conclude con il collaudo dei lavori
+      example: "IN LAVORAZIONE" 
     SchedaType2:
       description: Scheda generica definita dal contesto in cui si trova l'appalto
       type: object
