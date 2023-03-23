@@ -5,7 +5,6 @@ info:
   description: |-
     OpenAPI 3 templates and definitions for implementing
     interoperable APIs.
-
     The work is ongoing, your feedback is greatly appreciated!
   version: 0.0.1
 components:
