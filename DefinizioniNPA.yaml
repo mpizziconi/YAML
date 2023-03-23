@@ -168,12 +168,12 @@ schemas:
         example: '1213DF56'
   SchedaPartecipantiType:
       allOf: # estende il modello dati SchedaGenericType
-        - $ref: '#/schemas/SchedaGenericType'
+        - $ref: '#/SchedaGenericType'
   SchedaAggiudicazioneType:
       allOf: # estende il modello dati SchedaGenericType
-        - $ref: '#/schemas/SchedaGenericType'
+        - $ref: '#/SchedaGenericType'
   SchedaType:
     description: Scheda generica definita dal contesto in cui si trova l'appalto | Il Modello dati dinamico é presente al seguente URL https://github.com/anticorruzione/npa-docs/tree/3.04.7/PDF
     oneOf:
-      - $ref: '#/schemas/SchedaPartecipantiType'
-      - $ref: '#/schemas/SchedaAggiudicazioneType'
+      - $ref: '#/SchedaPartecipantiType'
+      - $ref: '#/SchedaAggiudicazioneType'
