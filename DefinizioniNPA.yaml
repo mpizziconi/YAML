@@ -12,6 +12,6 @@ components:
   schemas:
     SchedaType2:
       description: Scheda generica definita dal contesto in cui si trova l'appalto
-      oneOf:
-        - $ref: '#/components/schemas/SchedaPartecipantiType'
-        - $ref: '#/components/schemas/SchedaAggiudicazioneType'
+      propertues:
+        pippo: $ref: '#/components/schemas/SchedaPartecipantiType'
+        #- $ref: '#/components/schemas/SchedaAggiudicazioneType'
