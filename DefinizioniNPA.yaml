@@ -68,3 +68,16 @@ components:
         CIG:
           description: identificativo univoco della gara-lotto definito da ANAC
           type: string
+    Latitude:
+      description: |-
+        Latitude of a point expressed in:
+  
+        * the ETRS89 system for Italian and European territories
+        * and in WGS84 for the others.
+      example: 45.492599
+      externalDocs:
+        url: http://dati.gov.it/onto/clvapit#long
+      format: double
+      maximum: 90
+      minimum: -90
+      type: number
