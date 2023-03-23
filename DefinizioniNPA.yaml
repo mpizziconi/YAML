@@ -40,8 +40,6 @@ components:
           format: datetime
           example: '2022-01-23T12:02:05Z'
     PaginazioneType:
-      description: Oggetto per la paginazione dei risultati
-      additionalProperties: false
       properties:
         totRows: 
           description: Numero totale di record risultante dalla ricerca
