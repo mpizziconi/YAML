@@ -181,5 +181,6 @@ components:
           - $ref: '#/components/schemas/SchedaGenericType'
     SchedaType:
       description: Scheda generica definita dal contesto in cui si trova l'appalto | Il Modello dati dinamico é presente al seguente URL https://github.com/anticorruzione/npa-docs/tree/3.04.7/PDF
-      oneOf:
-        - $ref: '#/components/schemas/SchedaAggiudicazioneType'
+      properties:
+        schedaAggiudicazione:
+          $ref: '#/components/schemas/SchedaAggiudicazioneType'
