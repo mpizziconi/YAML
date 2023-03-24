@@ -39,7 +39,7 @@ La Nuova Piattaforma Appalti, quindi dispiega i servizi per l’integrazione (b2
 La nuova architettura prevede la dematerializzazione dei flussi, dove normativamente consentito, attraverso l’adozione degli standard e delle regole tecniche di interoperabilità tra le piattaforme di e-procurement, come ad esempio ESPD Request (European Single Procurement Document) per la parte di definizione ed avvio della procedura e ESPD Response per la componente di negoziazione.
 
 ## 5.1	Diagramma di contesto
-Nel seguente [diagramma di contesto](/Diagrammi-Draw.io/architettura-generale.png) sono rappresentati i servizi dell’NPA esposti e fruibili dai sistemi esterni.
+Nel seguente [diagramma di contesto](/Diagrammi-Draw.io/Diagramma-componenti.drawio) sono rappresentati i servizi dell’NPA esposti e fruibili dai sistemi esterni.
 
 
 ## 5.2	Flusso di Interoperabilità
