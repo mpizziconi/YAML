@@ -23,7 +23,9 @@ Di seguito si riporta una rappresentazione dell’ecosistema di approvvigionamen
 
 
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](../YAML/Diagrammi-Draw.io/architettura-generale.png)
+![architettura generale](/Diagrammi-Draw.io/architettura-generale.png)
+
+![architettura generale](/Diagrammi-Draw.io/"Diagramma a stati_v1.5.drawio")
 
 
 # 5 Descrizione del contesto 
