@@ -1,6 +1,25 @@
 # 1 Definizioni, acronimi e riferimenti
 # 2 Dati del documento
   ## 2.1 Definizioni e acronimi
+  La presenza nel documento dell'abbreviazione **[tbd]** (to be defined) indica una parte per la quale non si hanno elementi sufficienti per procedere ad una completa definizione; come tale sarà subordinata ad un'ulteriore definizione in una successiva versione del documento.
+  
+La presenza nel documento dell'abbreviazione **[tbc]** (to be confirmed) indica una parte per la quale sono stati assunti elementi che debbono essere confermati; come tale sarà subordinata ad una conferma in fase successiva.
+
+La presenza nel documento dell'abbreviazione **[na]** (non applicabile) indica che un argomento previsto nello standard di struttura di questo documento, risulta privo di significato nel contesto di questo sistema.
+
+  
+  |  |  | 
+  | ------------- | ------------- | 
+  | AVCP  | Autorità per la Vigilanza Contratti Pubblici(dal 2014 accorpata nell’ANAC). |
+  | ANAC  | Autorità Nazionale Anticorruzione |  
+  | Autorità  | Si riferisce all’ANAC |
+  | UAFI  | Ufficio Analisi Flussi Informativi |
+  | UPSI  | Ufficio Progettazione e sviluppo, Servizi Informatici e Gestione del Portale dell’ANAC. |  
+  | UESI  | Ufficio Esercizio Sistemi |
+  | BDNCP  | Banca Dati Nazionale dei Contratti Pubblici Anagrafe unica dei contratti pubblici. È la banca dati di riferimento di ANAC per utenze e soggetti rappresentati. |
+  | Portale Internet  | Punto di erogazione dei servizi web per gli utenti esterni ANAC |
+  | Servizi ANAC  | Nucleo centralizzato di servizi che contengono la logica di Business dell’Autorità. |
+  
   ## 2.1 Convenzioni di carattere generale
   ## 2.3	Convenzioni di progettazione
   ## 2.4	Contesto normativo
