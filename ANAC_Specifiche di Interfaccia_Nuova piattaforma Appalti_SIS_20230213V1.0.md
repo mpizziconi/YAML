@@ -1,4 +1,12 @@
 # 1 Definizioni, acronimi e riferimenti
+# 2 Dati del documento
+  ## 2.1 Definizioni e acronimi
+  ## 2.1 Convenzioni di carattere generale
+  ## 2.3	Convenzioni di progettazione
+  ## 2.4	Contesto normativo
+  ## 2.5	Riferimenti interni
+  ## 2.6	Riferimenti esterni
+# 3	Obiettivo del documento 
 Il presente documento ha lo scopo di definire le specifiche di interfaccia con i sistemi che interoperano con il nuovo sistema di digitalizzazione appalti che si articola in: Nuova Piattaforma Appalti (NPA), Nuova Piattaforma Appalti estesa (NPA estesa) e Fascicolo Virtuale dell’Operatore Economico (FVOE).
 
 Tale sistema ha inoltre l’obiettivo di descrivere l’ampio scenario nel quale le Piattaforme si collocano, considerando il quadro normativo di riferimento e indicando i processi esterni collegati e che concorrono a definire la Banca Dati Nazionale dei Contratti Pubblici (BDNCP).
@@ -8,19 +16,12 @@ In particolare, viene preso in considerazione l’attuale contesto normativo, a 
 L’art. 44 del D.lgs. 18 aprile 2016 n. 50, prevede che «siano definite le modalità di digitalizzazione delle procedure di tutti i contratti pubblici, anche attraverso l'interconnessione per interoperabilità dei dati delle pubbliche amministrazioni. Sono, altresì, definite le migliori pratiche riguardanti metodologie organizzative e di lavoro, metodologie di programmazione e pianificazione, riferite all'individuazione dei dati rilevanti, alla loro raccolta, gestione ed elaborazione, soluzioni informatiche, tecnologiche e infrastrutturali di supporto».
 
 Lo studio si prefigge di definire le soluzioni tecnologiche capaci di integrare i ruoli di tutti gli stakeholder affinché le procedure di appalto pubblico possano essere interamente gestite con sistemi telematici di acquisto e di negoziazione, nel rispetto delle disposizioni dettate dal medesimo Codice.
-
-The background color is `#ffffff` for light mode and `#000000` for dark mode.
-
-
-# 2 Dati del documento
-  ## 2.1 Definizioni e acronimi
-  ## 2.1 Convenzioni di carattere generale
-  ## 2.3	Convenzioni di progettazione
-  ## 2.4	Contesto normativo
-  ## 2.5	Riferimenti interni
-  ## 2.6	Riferimenti esterni
-# 3	Obiettivo del documento 
 # 4	Architettura generale 
+La nuova piattaforma integrata mira a digitalizzare i processi dell’intero ciclo di vita dell’appalto, attraverso la realizzazione di una serie di strumenti che abilitano l’integrazione e l’interoperabilità tra le piattaforme telematiche presenti nell’eco-sistema nazionale dell’e-procurement.
+
+Di seguito si riporta una rappresentazione dell’ecosistema di approvvigionamento digitale per la gestione degli appalti pubblici:
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+
 # 5 Descrizione del contesto 
 ## 5.1	Diagramma di contesto
 ## 5.2	Flusso di Interoperabilità
