@@ -26,9 +26,9 @@ Di seguito si riporta una rappresentazione dell’ecosistema di approvvigionamen
 # 5 Descrizione del contesto
 L’architettura applicativa complessiva prevede le seguenti componenti:
 
--Nuova Piattaforma Appalti estesa (NPA)
--Fascicolo Virtuale Operatore Economico (FVOE)
--Nuova Piattaforma Appalti Estesa (NPA Estesa)
+- Nuova Piattaforma Appalti estesa (NPA)
+- Fascicolo Virtuale Operatore Economico (FVOE)
+- Nuova Piattaforma Appalti Estesa (NPA Estesa)
 
 La Nuova Piattaforma Appalti (NPA) ha lo scopo principale di monitorare il ciclo di vita dell’appalto, attraverso la gestione e la raccolta delle informazioni rilevanti nei processi che compongono l’intero ciclo di vita.
 
@@ -39,6 +39,9 @@ La Nuova Piattaforma Appalti, quindi dispiega i servizi per l’integrazione (b2
 La nuova architettura prevede la dematerializzazione dei flussi, dove normativamente consentito, attraverso l’adozione degli standard e delle regole tecniche di interoperabilità tra le piattaforme di e-procurement, come ad esempio ESPD Request (European Single Procurement Document) per la parte di definizione ed avvio della procedura e ESPD Response per la componente di negoziazione.
 
 ## 5.1	Diagramma di contesto
+Nel seguente [diagramma di contesto](/Diagrammi-Draw.io/architettura-generale.png) sono rappresentati i servizi dell’NPA esposti e fruibili dai sistemi esterni.
+
+
 ## 5.2	Flusso di Interoperabilità
 ## 5.3	Diagramma a stati
 ### 5.3.1 Diagramma a stati Appalto
