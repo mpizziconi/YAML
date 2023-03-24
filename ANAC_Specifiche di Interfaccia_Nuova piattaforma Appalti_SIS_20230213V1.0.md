@@ -21,12 +21,7 @@ La nuova piattaforma integrata mira a digitalizzare i processi dell’intero cic
 
 Di seguito si riporta una rappresentazione dell’ecosistema di approvvigionamento digitale per la gestione degli appalti pubblici:
 
-
-
 ![architettura generale](/Diagrammi-Draw.io/architettura-generale.png)
-
-![architettura generale](/Diagrammi-Draw.io/"Diagramma a stati_v1.5.drawio")
-
 
 # 5 Descrizione del contesto 
 ## 5.1	Diagramma di contesto
