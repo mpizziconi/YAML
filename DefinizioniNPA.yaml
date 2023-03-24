@@ -1,0 +1,59 @@
+#  2021-01-09T00:01:18
+info:
+  commit: e45228232fa37d4946516e75fbf81ea2a8b78c74
+  date: 1610150478
+  description: |-
+    OpenAPI 3 templates and definitions for implementing
+    interoperable APIs.
+
+    The work is ongoing, your feedback is greatly appreciated!
+  version: 0.0.1
+components:
+  schemas:
+    SchedaGenericType:
+      description: Oggetto che riporta tutti i dati della Pianificazione
+      type: object
+      additionalProperties: false
+      properties:
+        idScheda:
+          description: identificativo univoco della Scheda restituito da ANAC in fase di creazione Scheda
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+        versione:
+          description: versione della scheda. necessaria al motore interno ANAC.
+          type: string
+          example: '01.00.00'
+        dataCreazione:
+          description: data creazione della pianificazione (A datetime specified by RF3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'
+    PartecipanteType:
+      description: Oggetto che riporta tutti i dati della Partecipante
+      type: object
+      additionalProperties: false
+      properties:
+        codiceAnag:
+          description: codice Anagrafica presente in AUSA (???)
+          type: string
+          example: '1213DF56'
+    SchedaPartecipantiType:
+      allOf: # estende il modello dati SchedaGenericType
+        - $ref: '#/components/schemas/SchedaGenericType'
+      description: Oggetto che riporta tutti i dati della Scheda relativa Partecipanti
+      type: object
+      additionalProperties: false
+      properties:
+        partecipanti:
+          type: array
+          items:
+            $ref: '#/components/schemas/PartecipanteType'
+    SchedaAggiudicazioneType:
+      allOf: # estende il modello dati SchedaGenericType
+        - $ref: '#/components/schemas/SchedaGenericType'
+    SchedaType:
+      description: Scheda generica definita dal contesto in cui si trova l'appalto | Il Modello dati dinamico é presente al seguente URL https://github.com/anticorruzione/npa-docs/tree/3.04.7/PDF
+      oneOf:
+        - $ref: '#/components/schemas/SchedaPartecipantiType'
+        - $ref: '#/components/schemas/SchedaAggiudicazioneType'
