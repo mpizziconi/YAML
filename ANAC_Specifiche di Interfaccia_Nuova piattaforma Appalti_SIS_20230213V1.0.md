@@ -106,6 +106,36 @@ Il diagramma seguente illustra i cambi di stato dell’entità Notice di TED:
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
 # 6	Contesto pianificazioneAppalto
+Nel seguente contesto sono inclusi i servizi utilizzabili dalla SA utili alla gestione della prima fase di pianificazione e programmazione mediante la creazione e la conferma dell’Avviso di Preinformazione.
+
+L’avviso di Preinformazione (disciplinato all’art. 70 del Nuovo codice degli Appalti) è uno strumento per l’indizione della procedura di scelta del contraente, adottato da una stazione appaltante che intenda aggiudicare un contratto pubblico.
+
+L’avviso di preinformazione deve contenere:
+
+- specifico riferimento alle forniture, ai lavori o ai servizi oggetto dell’appalto;
+- indicazione che l’appalto sarà aggiudicato mediante una procedura ristretta o una procedura competitiva con negoziazione senza ulteriore pubblicazione di un avviso di indizione di gara;
+- un invito agli operatori economici interessati a manifestare il proprio interesse;
+- ulteriori informazioni (Nuovo Codice dei Contratti Pubblici – Allegato XIV), tra cui: contatti dell’amministrazione aggiudicatrice e modalità di accesso ai documenti di gara; codici relativi all’appalto (CPV; NUTS); breve descrizione dell’appalto (natura ed entità dei lavori, natura e quantità/valore delle forniture; natura ed entità dei servizi); indicazione del fatto che gli operatori economici interessati devono far conoscere all’amministrazione aggiudicatrice il loro interesse per l’appalto; tipologia di procedura di aggiudicazione; termini e indirizzo per la ricezione delle manifestazioni d’interesse.
+
+Il periodo coperto dall’avviso di preinformazione può durare al massimo dodici mesi dalla data di trasmissione dell’avviso per la pubblicazione, salvo nel caso di appalti pubblici per servizi sociali e altri servizi affini (Nuovo Codice degli Appalti Pubblici, art. 142; Allegato IX), per i quali l’avviso di preinformazione può coprire un periodo non superiore a ventiquattro mesi.
+
+**Descrizione dei servizi**
+
+I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
+
+- **creaPiano**: servizio utile per l’inserimento in bozza di un avviso di preinformazione. 
+A seguito dell’invocazione di questo servizio, il Piano transita nello stato “IN LAVORAZIONE”;
+- **confermaPiano**: servizio che ha lo scopo di validare e confermare i dati del Piano. A seguito dell’invocazione di questo servizio, lo stato del Piano transita in “CONFERMATO”.
+
+Servizi facoltativi, una volta richiamato il creaPiano, possono essere invocati i seguenti servizi:
+
+Servizi facoltativi, una volta richiamato il creaPiano, possono essere invocati i seguenti servizi:
+- <ins>modificaPiano</ins>: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
+- verificaPiano: servizio di validazione dell’avviso di preinformazione in bozza. Tale validazione viene eseguita solo per l’ultima istanza del piano inviato e va a verificare il rispetto dell’obbligatorietà degli input rispetto alle regole di pubblicazione;
+- ricercaPiano: servizio che permette la ricerca del Piano sulla base dei criteri di input;
+- consultaPiano: servizio che consente la consultazione delle informazioni di dettaglio di un Piano;
+- cancellaPiano: servizio di cancellazione logica della bozza del Piano creata o modificata. A seguito dell’invocazione di tale servizio, il Piano transita in stato “CANCELLATO” (Stato finale).
+
 ## 6.1	Flusso di Interoperabilità
 # 7	Contesto comunicaAppalto
 ## 7.1	Flusso di Interoperabilità
