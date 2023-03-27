@@ -65,7 +65,26 @@ Nel seguente diagramma di contesto sono rappresentati i servizi dell’NPA espos
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
 ## 5.2	Flusso di Interoperabilità
+Nel presente paragrafo si rappresentano i flussi di interoperabilità di tutto il ciclo di appalto attraverso l’uso del Sequence Diagram:
+
+![architettura generale](/Diagrammi-Draw.io/flusso-interoperabilita-generale.png)
+
+**Legenda colori:**
+- Nome servizio = Servizi che richiamano la PPl o TED (esterne rispetto all’NPA) per la pubblicazione nazionale o europea.
+- Nome servizio = Servizi che richiamano contesti e componenti interne all’NPA.
+
+Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+
 ## 5.3	Diagramma a stati
+Nei paragrafi che seguono sono illustrati, attraverso diagrammi a stati, i passaggi di stato per le seguenti entità coinvolte:
+
+1. **Appalto**
+2. **Avviso**
+3. **TED**
+
+Il diagramma riporta, per ogni entità, lo stato di partenza e le frecce orientate ad indicare il servizio invocato per completare la transizione di stato.
+
+
 ### 5.3.1 Diagramma a stati Appalto
 ### 5.3.2 Diagramma a stati Avviso
 ### 5.3.3 Diagramma a stati TED
