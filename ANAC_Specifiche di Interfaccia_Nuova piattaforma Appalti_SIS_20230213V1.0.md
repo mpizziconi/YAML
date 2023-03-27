@@ -67,7 +67,7 @@ Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma dra
 ## 5.2	Flusso di Interoperabilità
 Nel presente paragrafo si rappresentano i flussi di interoperabilità di tutto il ciclo di appalto attraverso l’uso del Sequence Diagram:
 
-![architettura generale](/Diagrammi-Draw.io/flusso-interoperabilita-generale.png)
+![Sequence Diagram Overview](/Diagrammi-Draw.io/flusso-interoperabilita-generale.png)
 
 **Legenda colori:**
 - Nome servizio = Servizi che richiamano la PPl o TED (esterne rispetto all’NPA) per la pubblicazione nazionale o europea.
@@ -87,21 +87,21 @@ Il diagramma riporta, per ogni entità, lo stato di partenza e le frecce orienta
 ### 5.3.1 Diagramma a stati Appalto
 Il diagramma seguente illustra i cambi di stato dell’entità Appalto:
 
-![architettura generale](/Diagrammi-Draw.io/diagramma-stati-appalto.png)
+![Diagramma a stati Appalto](/Diagrammi-Draw.io/diagramma-stati-appalto.png)
 
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
 ### 5.3.2 Diagramma a stati Avviso
 Il diagramma seguente illustra i cambi di stato dell’entità Avviso:
 
-![architettura generale](/Diagrammi-Draw.io/diagramma-stati-avviso.png)
+![Diagramma a stati Avviso](/Diagrammi-Draw.io/diagramma-stati-avviso.png)
 
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
 ### 5.3.3 Diagramma a stati TED
 Il diagramma seguente illustra i cambi di stato dell’entità Notice di TED:
 
-![architettura generale](/Diagrammi-Draw.io/diagramma-stati-ted.png)
+![Diagramma a stati TED](/Diagrammi-Draw.io/diagramma-stati-ted.png)
 
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
@@ -135,6 +135,13 @@ Servizi <ins>facoltativi</ins>, una volta richiamato il creaPiano, possono esser
 - cancellaPiano: servizio di cancellazione logica della bozza del Piano creata o modificata. A seguito dell’invocazione di tale servizio, il Piano transita in stato “CANCELLATO” (Stato finale).
 
 ## 6.1	Flusso di Interoperabilità
+Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi che l’SA potrà richiamare in questa fase:
+
+
+![Sequence Diagram pianificazioneAppalto](/Diagrammi-Draw.io/flusso-interoperabilita-pianificazione-appalto.png)
+
+Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+
 # 7	Contesto comunicaAppalto
 ## 7.1	Flusso di Interoperabilità
 # 8	Contesto pubblicaAvviso
