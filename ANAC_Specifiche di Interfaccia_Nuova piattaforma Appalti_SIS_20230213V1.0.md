@@ -84,10 +84,27 @@ Nei paragrafi che seguono sono illustrati, attraverso diagrammi a stati, i passa
 
 Il diagramma riporta, per ogni entità, lo stato di partenza e le frecce orientate ad indicare il servizio invocato per completare la transizione di stato.
 
-
 ### 5.3.1 Diagramma a stati Appalto
+Il diagramma seguente illustra i cambi di stato dell’entità Appalto:
+
+![architettura generale](/Diagrammi-Draw.io/diagramma-stati-appalto.png)
+
+Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+
 ### 5.3.2 Diagramma a stati Avviso
+Il diagramma seguente illustra i cambi di stato dell’entità Avviso:
+
+![architettura generale](/Diagrammi-Draw.io/diagramma-stati-avviso.png)
+
+Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+
 ### 5.3.3 Diagramma a stati TED
+Il diagramma seguente illustra i cambi di stato dell’entità Notice di TED:
+
+![architettura generale](/Diagrammi-Draw.io/diagramma-stati-ted.png)
+
+Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+
 # 6	Contesto pianificazioneAppalto
 ## 6.1	Flusso di Interoperabilità
 # 7	Contesto comunicaAppalto
