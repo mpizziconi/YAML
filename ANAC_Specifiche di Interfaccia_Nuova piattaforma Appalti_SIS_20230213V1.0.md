@@ -127,10 +127,8 @@ I servizi che devono essere obbligatoriamente richiamati per questo contesto del
 A seguito dell’invocazione di questo servizio, il Piano transita nello stato “IN LAVORAZIONE”;
 - **confermaPiano**: servizio che ha lo scopo di validare e confermare i dati del Piano. A seguito dell’invocazione di questo servizio, lo stato del Piano transita in “CONFERMATO”.
 
-Servizi facoltativi, una volta richiamato il creaPiano, possono essere invocati i seguenti servizi:
-
-Servizi facoltativi, una volta richiamato il creaPiano, possono essere invocati i seguenti servizi:
-- <ins>modificaPiano</ins>: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
+Servizi <ins>facoltativi</ins>, una volta richiamato il creaPiano, possono essere invocati i seguenti servizi:
+- <modificaPiano: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
 - verificaPiano: servizio di validazione dell’avviso di preinformazione in bozza. Tale validazione viene eseguita solo per l’ultima istanza del piano inviato e va a verificare il rispetto dell’obbligatorietà degli input rispetto alle regole di pubblicazione;
 - ricercaPiano: servizio che permette la ricerca del Piano sulla base dei criteri di input;
 - consultaPiano: servizio che consente la consultazione delle informazioni di dettaglio di un Piano;
