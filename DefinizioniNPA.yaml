@@ -33,9 +33,7 @@ components:
            * 'SOSPESA' - L'esecuzione dei lavori di un appalto sono sospesi
            * 'CONCLUSA' - 
            * 'COLLAUDATA' - L'Appalto si conclude con il collaudo dei lavori
-        example: "IN LAVORAZIONE" 
-      StatoLottoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/YAML/main/DefinizioniNPA.yaml#/components/schemas/StatoLottoEnum'
+        example: "IN LAVORAZIONE"
       StatoAvvisoEnum:
         type: string
         minimum: 1
