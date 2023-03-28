@@ -1909,7 +1909,7 @@ components:
          * 'COLLAUDATA' - L'Appalto si conclude con il collaudo dei lavori
       example: "IN LAVORAZIONE" 
     StatoLottoEnum:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/YAML/main/anticorruzione-npa-fvoe/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoLottoEnum'
+      $ref: 'https://raw.githubusercontent.com/domaltomare/YAML/main/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoLottoEnum'
     StatoAvvisoEnum:
       type: string
       minimum: 1
@@ -2180,7 +2180,7 @@ components:
           items:
             $ref: '#/components/schemas/AvvisoType'
     AFormType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/YAML/main/anticorruzione-npa-fvoe/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AFormType'
+      $ref: 'https://raw.githubusercontent.com/domaltomare/YAML/main/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AFormType'
     EFormType:
       description:  dati per la pubblicazione in TED nel formato definito in ambito europeo
       type: object
@@ -2233,7 +2233,7 @@ components:
       required:
         - idPianificazione
     SchedaType: 
-        $ref: 'https://raw.githubusercontent.com/domaltomare/YAML/main/anticorruzione-npa-fvoe/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaType'
+        $ref: 'https://raw.githubusercontent.com/domaltomare/YAML/main/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaType'
     AnagraficaType:
       description: Oggetto che riporta tutti i dati dell'Documento
       type: object
