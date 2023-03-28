@@ -40,7 +40,7 @@ La nuova piattaforma integrata mira a digitalizzare i processi dell’intero cic
 
 Di seguito si riporta una rappresentazione dell’ecosistema di approvvigionamento digitale per la gestione degli appalti pubblici:
 
-![architettura generale](/Diagrammi-Draw.io/architettura-generale.png)
+![architettura generale](../immagini/architettura-generale.png)
 
 # 5 Descrizione del contesto
 L’architettura applicativa complessiva prevede le seguenti componenti:
