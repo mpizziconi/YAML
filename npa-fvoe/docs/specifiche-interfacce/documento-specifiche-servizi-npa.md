@@ -146,6 +146,7 @@ In questa fase del processo avviene la creazione dell’appalto, la formalizzazi
 I servizi di seguito descritti potranno essere pertanto richiamati dalle SA fino all’emissione dei CIG ai diversi lotti che compongono l’Appalto: l’Appalto, fino a quel momento, sarà in uno stato di “bozza”.
 
 **Descrizione servizi**
+
 I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
 -	**crea-appalto**: servizio che consente l’inserimento della prima istanza (in bozza) di un Appalto. A seguito dell’invocazione di questo servizio, l’Appalto transita in stato “IN LAVORAZIONE”;
 -	**conferma-appalto**: tale servizio serve a confermare i dati dell’Appalto e ad assegnare i CIG.
