@@ -29,8 +29,10 @@ La complessità della verifica durante l'acquisizione delle schede dati è gesti
 - effettuare una validazione sintattica dei dati di input
 
 Lo schema delle regole di acquisizione di una schede dati è consultabile nella cartella [orchestratore](/npa-fvoe/docs/orchestratore/). 
-# Comunica con ANAC
-L'unico canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issues](https://github.com/domaltomare/YAML/issues)
+# Domande
+L'unico canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issues](https://github.com/domaltomare/YAML/issues) nella quale poter inserire una richiesta.
+
+Si precisa che potrebbero non essere soddisfatte tutte le richieste pervenute.
 
 
 # Discamer
