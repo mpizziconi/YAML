@@ -24,8 +24,8 @@ I diagrammmi di contesto, di sequenza e di stato per l'intero Ciclo di Vita dell
 Sono stati disegnati mediante l'utilizzo di [Draw.io](https://www.draw.io/).
 
 ## Orchestratore
-La complessità di verifica di acquisizione di una specifica scheda dati in un determinato momento dell'Appalto è demandata ad un orchestratore NPA che, tramite il suo motore di regole si occupa di:
-- verificare se la scheda dati è coerente con lo stato dell’Appalto
+La complessità della verifica durante l'acquisizione delle schede dati è gestita dal componente NPA di orchestrazione che, tramite il suo motore di regole, ha il compito di:
+- verificare se la scheda dati passata in input è coerente con lo stato dell’Appalto
 - effettuare una validazione sintattica dei dati di input
 
 Lo schema delle regole di acquisizione di una schede dati è consultabile nella cartella [orchestratore](/npa-fvoe/docs/orchestratore/). 
