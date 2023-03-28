@@ -300,3 +300,4 @@ In tale contesto, i soggetti di cui all’art. 2, comma 2 del CAD e i soggetti p
 I soggetti fruitori che non fanno parte della PDND dovranno rispettare gli standard di interoperabilità MoDI.
 
 # 14	Interfaccia servizi
+Le interfacce dei servizi sono definite secondo gli standard di interoperabilità tramite API dei sistemi informatici che tutte le pubbliche amministrazioni devono adottare al fine di garantire l’interoperabilità dei propri sistemi con quelli di altri soggetti a favorire l’implementazione complessiva del sistema informativo delle PA (ModI).
