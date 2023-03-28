@@ -50,7 +50,7 @@ Di seguito si riporta una rappresentazione dell’ecosistema di approvvigionamen
 # 5 Descrizione del contesto
 L’architettura applicativa complessiva prevede le seguenti componenti:
 
-- Nuova Piattaforma Appalti estesa (NPA)
+- Nuova Piattaforma Appalti (NPA)
 - Fascicolo Virtuale Operatore Economico (FVOE)
 - Nuova Piattaforma Appalti Estesa (NPA Estesa)
 
