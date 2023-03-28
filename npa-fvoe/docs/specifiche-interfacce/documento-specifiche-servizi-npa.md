@@ -187,6 +187,10 @@ Sarà possibile invocare anche i seguenti servizi facoltativi:
 -	get-rendering-avviso: servizio per consentire la consultazione in formato pdf dell’Avviso.
 
 ## 8.1	Flusso di Interoperabilità
+Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
+
+![flusso di interoperabilità pubblica avviso](../immagini/flusso-interoperabilita-pubblica-avviso.png)
+
 # 9	Contesto comunicaPostPubblicazione
 ## 9.1	Flusso di Interoperabilità
 # 10	Contesto FVA
