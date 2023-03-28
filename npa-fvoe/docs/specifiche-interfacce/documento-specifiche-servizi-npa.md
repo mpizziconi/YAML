@@ -340,4 +340,4 @@ I soggetti fruitori che non fanno parte della PDND dovranno rispettare gli stand
 # 15	Interfaccia servizi
 Le interfacce dei servizi sono definite secondo gli standard di interoperabilità tramite API dei sistemi informatici che tutte le pubbliche amministrazioni devono adottare al fine di garantire l’interoperabilità dei propri sistemi con quelli di altri soggetti a favorire l’implementazione complessiva del sistema informativo delle PA (ModI).
 
-I file YAML con le specifiche delle interfacce dei servizi esposti dalla NPA sono consultabili nella [cartella](../specifiche-interfacce/) 
+I file YAML con le specifiche delle interfacce dei servizi esposti dalla NPA sono consultabili nella cartella [specifiche-interfacce](../specifiche-interfacce/)
