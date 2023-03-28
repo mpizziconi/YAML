@@ -254,7 +254,26 @@ Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei va
 ![flusso di interoperabilità fva](../immagini/flusso-interoperabilita-fva.png)
 
 # 11	Contesto FVOE
+Il Fascicolo Virtuale dell’Operatore Economico è un componente del sistema che offre servizi sia alla SA che all’Operatore economico e ha l’obiettivo di raccogliere tutte informazioni e la documentazione afferente a un Operatore Economico che partecipa ad una gara.
+L’FVOE prevede sia l’esposizione di servizi API per l’integrazione con le piattaforme esterne, sia funzionalità con interfaccia Web per consentire l’accesso e le operazioni sul Fascicolo agli Operatori Economici.
+
+**Descrizione dei servizi**
+
+I servizi facoltativi che l’SA potrà invocare relativamente al Fascicolo dell’Operatore economico sono i seguenti:
+-	richiedi-accesso-fvoe: servizio che permettedi richiedere l’accesso alle informazioni di dettaglio del fascicolo di un OE immettendo in input il codice fiscale dell’OE e il CIG;
+-	verifica-stato-richiesta-accesso: servizio che permette di conoscere lo stato della richiesta di accesso al fascicolo inoltrata attraverso l’invocazione del servizio richiediAccessoFVOE;
+-	ricerca-documenti: servizio che permette la ricerca dei documenti di un Fascicolo sulla base dei criteri di input;
+-	recupera-documento: servizio che permette la consultazione delle informazioni di dettaglio di un documento;
+-	richiedi-documento: servizio che consente di richiedere agli enti certificatori un documento specifico;
+-	recupera-documento: servizio che consente di recuperare il documento richiesto;
+-	recuperaStoricoDocumento: attraverso l’invocazione di tale servizio sarà possibile recuperare la history e tutte le operazioni effettuate su quel documento;
+-	recupera-anagrafica-oe: tramite questo servizio sarà possibile recuperare l’anagrafica degli operatori economici immettendo come input il codice fiscale dell’OE.
+
 ## 11.1	Flusso di Interoperabilità
+Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
+
+![flusso di interoperabilità fvoe](../immagini/flusso-interoperabilita-fvoe.png)
+
 # 12	Servizi comuni
 # 13	Contesto di sicurezza
 # 14	Interfaccia servizi
