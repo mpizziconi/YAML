@@ -29,5 +29,6 @@ La complessità della verifica durante l'acquisizione delle schede dati è gesti
 - effettuare una validazione sintattica dei dati di input
 
 Lo schema delle regole di acquisizione di una schede dati è consultabile nella cartella [orchestratore](/npa-fvoe/docs/orchestratore/). 
-# Issue
+# Comunica con ANAC
+L'unico canale di comunicazione con ANAC è rappresentato dall'apposita sezione Issues](https://www.draw.io/).
 # Discamer
