@@ -60,14 +60,14 @@ La nuova architettura prevede la dematerializzazione dei flussi, dove normativam
 ## 5.1	Diagramma di contesto
 Nel seguente diagramma di contesto sono rappresentati i servizi dell’NPA esposti e fruibili dai sistemi esterni:
 
-![architettura generale](/Diagrammi-Draw.io/diagramma-contesto.png)
+![diagramma di contesto](../immagini/contesto.png)
 
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
 ## 5.2	Flusso di Interoperabilità
 Nel presente paragrafo si rappresentano i flussi di interoperabilità di tutto il ciclo di appalto attraverso l’uso del Sequence Diagram:
 
-![Sequence Diagram Overview](/Diagrammi-Draw.io/flusso-interoperabilita-generale.png)
+![flusso di interoperabilità generale](../immagini/flusso-interoperabilita-generale.png)
 
 **Legenda colori:**
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) Nome servizio = Servizi che richiamano la PPl o TED (esterne rispetto all’NPA) per la pubblicazione nazionale o europea.
@@ -87,21 +87,21 @@ Il diagramma riporta, per ogni entità, lo stato di partenza e le frecce orienta
 ### 5.3.1 Diagramma a stati Appalto
 Il diagramma seguente illustra i cambi di stato dell’entità Appalto:
 
-![Diagramma a stati Appalto](/Diagrammi-Draw.io/diagramma-stati-appalto.png)
+![diagramma a stati dell'Appalto](../immagini/diagramma-stati-appalto.png)
 
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
 ### 5.3.2 Diagramma a stati Avviso
 Il diagramma seguente illustra i cambi di stato dell’entità Avviso:
 
-![Diagramma a stati Avviso](/Diagrammi-Draw.io/diagramma-stati-avviso.png)
+![diagramma a stati dell'Avviso](../immagini/diagramma-stati-avviso.png)
 
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
 ### 5.3.3 Diagramma a stati TED
 Il diagramma seguente illustra i cambi di stato dell’entità Notice di TED:
 
-![Diagramma a stati TED](/Diagrammi-Draw.io/diagramma-stati-ted.png)
+![diagramma a stati dell'Avviso in TED](../immagini/diagramma-stati-ted.png)
 
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
@@ -138,7 +138,7 @@ Servizi <ins>facoltativi</ins>, una volta richiamato il creaPiano, possono esser
 Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi che l’SA potrà richiamare in questa fase:
 
 
-![Sequence Diagram pianificazioneAppalto](/Diagrammi-Draw.io/flusso-interoperabilita-pianificazione-appalto.png)
+![flusso di interoperabilità pianificazione appalto](../immagini/flusso-interoperabilita-pianificazione-appalto.png)
 
 Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
 
