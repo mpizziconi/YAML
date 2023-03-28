@@ -19,8 +19,7 @@ Le immagini che rappresentano il contesto, i flussi di interoperabilità e le tr
 consultabili nella cartella [immagini](/npa-fvoe/docs/immagini/).
 
 ## Diagrammi drawio
-I diagrammmi di contesto, di sequenza e di stato per l'intero Ciclo di Vita dell'Appalto sono consultabili nella cartella [diagrammi-drawio](/npa-fvoe/docs/diagrammi-drawio/). 
-Sono stati disegnati mediante l'utilizzo di [Draw.io](https://www.draw.io/).
+I diagrammmi di contesto, di sequenza e di stato per l'intero Ciclo di Vita dell'Appalto sono consultabili nella cartella [diagrammi-drawio](/npa-fvoe/docs/diagrammi-drawio/) e, sono stati disegnati mediante l'utilizzo di [Draw.io](https://www.draw.io/).
 
 ## Orchestratore
 La complessità della verifica durante l'acquisizione delle schede dati è gestita dal componente NPA di orchestrazione che, tramite il suo motore di regole, ha il compito di:
