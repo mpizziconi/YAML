@@ -219,8 +219,8 @@ A titolo esemplificativo si riportano di seguito alcune ipotetiche schede dati:
 I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
 -	**crea-scheda**: servizio che consente l’inserimento di una scheda dati che può essere relativa sia alla fase di aggiudicazione sia a quella di esecuzione. La scheda, a seguito dell’invocazione del servizio, transita nello stato “IN LAVORAZIONE”;
 -	**conferma-scheda**: il servizioserve a confermare i dati della Scheda e per poter essere invocato è necessario che questa sia in stato “IN LAVORAZIONE” dopo la creazione o modifica di una scheda in bozza. Il sistema, attraverso l’invocazione del servizio verifica-scheda, provvede alla validazione dei dati della scheda. Tale validazione è orchestrata da un Workflow Engine che, tramite il suo motore di regole effettua le seguenti operazioni:
-  -	verifica se la scheda dati è coerente con lo stato dell’Appalto; 
-  -	effettua una validazione sintattica dei dati di input. 
+ -	verifica se la scheda dati è coerente con lo stato dell’Appalto; 
+ -	effettua una validazione sintattica dei dati di input. 
 
 Nel caso in cui si tratti di una scheda che prevede la pubblicazione sulla Piattaforma nazionale o sul TED il sistema invocherà il servizio pubblica-avviso per completare la transizione allo stato successivo dell’Appalto o per poter confermare la scheda successiva in lavorazione. 
 
