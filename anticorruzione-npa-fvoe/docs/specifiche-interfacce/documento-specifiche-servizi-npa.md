@@ -69,8 +69,8 @@ Nel presente paragrafo si rappresentano i flussi di interoperabilità di tutto i
 
 ![flusso di interoperabilità generale](../immagini/flusso-interoperabilita-generale.png)
 
-**Legenda colori:**
-- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) Nome servizio = Servizi che richiamano la PPl o TED (esterne rispetto all’NPA) per la pubblicazione nazionale o europea.
+**Legenda:**
+- *Nome servizio* = Servizi che richiamano la PPL o TED (esterne rispetto all’NPA) per la pubblicazione nazionale e/o europea.
 - Nome servizio = Servizi che richiamano contesti e componenti interne all’NPA.
 
 Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
