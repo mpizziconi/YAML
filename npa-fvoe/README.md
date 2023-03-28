@@ -20,6 +20,8 @@ L’Autorità Nazionale Anticorruzione mette a disposizione la documentazione de
 1. Le immagini che rappresentano il contesto, i flussi di interoperabilità e le transizioni di stato per l'intero Ciclo di Vita dell’Appalto sono
 consultabili nella cartella [immagini](/npa-fvoe/docs/immagini/).
 ## Diagrammi drawio
+1. I diagrammmi di contesto, di sequenza utilizzati per descrivere i flussi di interoperabilità e di stato sono
+consultabili nella cartella [immagini](/npa-fvoe/docs/diagrammi-drawio/) e sono stati disegnati mediante l'utilizzo di [Draw.io](https://www.draw.io/).
 ## Orchestratore
 # Issue
 # Discamer
