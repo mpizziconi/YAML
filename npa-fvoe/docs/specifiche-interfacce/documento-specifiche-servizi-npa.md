@@ -19,6 +19,7 @@ La presenza nel documento dell'abbreviazione **[na]** (non applicabile) indica c
   | BDNCP  | Banca Dati Nazionale dei Contratti Pubblici Anagrafe unica dei contratti pubblici. È la banca dati di riferimento di ANAC per utenze e soggetti rappresentati. |
   | Portale Internet  | Punto di erogazione dei servizi web per gli utenti esterni ANAC |
   | Servizi ANAC  | Nucleo centralizzato di servizi che contengono la logica di Business dell’Autorità. |
+  | FVA  | Fascicolo Virtuale dell'Appalto |
   
   ## 2.1 Convenzioni di carattere generale
   ## 2.3	Convenzioni di progettazione
