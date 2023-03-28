@@ -174,15 +174,17 @@ In questa fase del processo avviene la pubblicazione, a livello europeo e/o nazi
 
 I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
 -	**pubblica-avviso**: attraverso l’invocazione di tale servizio viene richiesta la pubblicazione di un Avviso, a livello nazionale e/o europeo, relativo all’ultima istanza dell’Appalto validato e confermato mediante il servizio confermaAppalto. A seguito della chiamata a questo servizio, l’avviso transita in stato “IN ATTESA PUBBLICAZIONE”.
+
 Sarà possibile invocare anche i seguenti servizi facoltativi:
+
 -	cancella-avviso: servizio di sospensione di una richiesta di pubblicazione, sia nazionale sia europea, di un avviso non ancora pubblicato. L’Appalto transita nello stato “STOP PUBBLICAZIONE” e l’Avviso in “ANNULLA PUBBLICAZIONE”;
-‒	modifica-avviso: servizio di creazione di un nuovo Avviso che sostituisce il precedente non ancora pubblicato. L’Appalto rimane in stato “IN ATTESA PUBBLICAZIONE” e l’avviso transita nello stato “IN ATTESA PUBBLICAZIONE”;
-‒	rettifica-avviso: servizio utile alla creazione di un’avviso di rettifica in caso di pubblicazione già avvenuta; L’Appalto rimane nello stato “PUBBLICATO”, mentre lo stato dell’avviso transiterà in ”IN ATTESA PUBBLICAZIONE”.
-‒	stato-avviso: servizio tramite il quale avviene il recupero dello stato in cui si trova un Avviso;
-‒	recupera-cig: servizio per il recupero dei CIG generati e assegnati ai lotti dell’Appalto. Il servizio è il medesimo descritto nel contesto di comunicaAppalto;
-‒	ricerca-avviso: servizio per la ricerca degli avvisi di un appalto in base ai criteri di input. 
-‒	consulta-avviso: servizio per la consultazione delle informazioni di dettaglio di un Avviso 
-‒	get-rendering-avviso: servizio per consentire la consultazione in formato pdf dell’Avviso.
+-	modifica-avviso: servizio di creazione di un nuovo Avviso che sostituisce il precedente non ancora pubblicato. L’Appalto rimane in stato “IN ATTESA PUBBLICAZIONE” e l’avviso transita nello stato “IN ATTESA PUBBLICAZIONE”;
+-	rettifica-avviso: servizio utile alla creazione di un’avviso di rettifica in caso di pubblicazione già avvenuta; L’Appalto rimane nello stato “PUBBLICATO”, mentre lo stato dell’avviso transiterà in ”IN ATTESA PUBBLICAZIONE”.
+-	stato-avviso: servizio tramite il quale avviene il recupero dello stato in cui si trova un Avviso;
+-	recupera-cig: servizio per il recupero dei CIG generati e assegnati ai lotti dell’Appalto. Il servizio è il medesimo descritto nel contesto di comunicaAppalto;
+-	ricerca-avviso: servizio per la ricerca degli avvisi di un appalto in base ai criteri di input. 
+-	consulta-avviso: servizio per la consultazione delle informazioni di dettaglio di un Avviso 
+-	get-rendering-avviso: servizio per consentire la consultazione in formato pdf dell’Avviso.
 
 ## 8.1	Flusso di Interoperabilità
 # 9	Contesto comunicaPostPubblicazione
