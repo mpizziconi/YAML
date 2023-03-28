@@ -146,7 +146,29 @@ Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi c
 
 Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
-# 7	Contesto comunicaAppalto
+# 7	Contesto presaInCarico
+
+Nel seguente contesto della Nuova Piattaforma Appalti sono inclusi i servizi utilizzabili dalla SA per effettuare la gestione degli incaricati, la delega e la presa in carico di determinate operazioni.
+
+**Descrizione dei servizi**
+
+I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
+- **associa-responsabile-progetto**: servizio utile per l’associazione di un responsabile di progetto;
+- **aggiungi-soggetto**: servizio che ha lo scopo aggiungere l’istanza di un soggetto delegato.
+
+Possono inoltre essere invocati i seguenti servizi facoltativi:
+-	ricerca-soggetto: servizio che permette la ricerca di un soggetto sulla base dei criteri di input;
+-	elimina- soggetto: servizio di cancellazione logica di un soggetto. 
+
+## 7.1	Flusso di Interoperabilità
+
+Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi che l’SA potrà richiamare in questa fase:
+
+![flusso di interoperabilità presa in carico](../immagini/flusso-interoperabilita-presa-in-carico.png)
+
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
+
+# 8	Contesto comunicaAppalto
 In questa fase del processo avviene la creazione dell’appalto, la formalizzazione dei fabbisogni della SA e, al termine di tutte le verifiche necessarie, l’emissione del CIG.
 I servizi di seguito descritti potranno essere pertanto richiamati dalle SA fino all’emissione dei CIG ai diversi lotti che compongono l’Appalto: l’Appalto, fino a quel momento, sarà in uno stato di “bozza”.
 
@@ -167,12 +189,12 @@ Servizi facoltativi, una volta richiamato il crea-appalto, possono essere i segu
 - consulta-appalto: servizio che consente la consultazione delle informazioni di dettaglio di un Appalto;
 - recupera-cig: servizio che consente il recupero dei CIG generati e assegnati ai lotti dell’Appalto. Lo stato dell’Appalto per poter richiamare tale servizio dovrà essere “CONFERMATO”.
 
-## 7.1	Flusso di Interoperabilità
+## 8.1	Flusso di Interoperabilità
 Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi che l’SA potrà richiamare in questa fase:
 
 ![flusso di interoperabilità comunica appalto](../immagini/flusso-interoperabilita-comunica-appalto.png)
 
-# 8	Contesto pubblicaAvviso
+# 9	Contesto pubblicaAvviso
 In questa fase del processo avviene la pubblicazione, a livello europeo e/o nazionale, degli avvisi relativi all’Appalto o ad una delle schede successive che prevedono la pubblicazione (ad esempio: aggiudicazione, modifica contrattuale, ecc).
 
 **Descrizione servizi**
@@ -191,12 +213,12 @@ Sarà possibile invocare anche i seguenti servizi facoltativi:
 -	consulta-avviso: servizio per la consultazione delle informazioni di dettaglio di un Avviso 
 -	get-rendering-avviso: servizio per consentire la consultazione in formato pdf dell’Avviso.
 
-## 8.1	Flusso di Interoperabilità
+## 9.1	Flusso di Interoperabilità
 Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
 
 ![flusso di interoperabilità pubblica avviso](../immagini/flusso-interoperabilita-pubblica-avviso.png)
 
-# 9	Contesto comunicaPostPubblicazione
+# 10	Contesto comunicaPostPubblicazione
 In questo contesto rientrano tutti i servizi richiamabili dalla SA finalizzati alla gestione delle fasi del ciclo di vita dell’Appalto successive alla pubblicazione di un bando di gara. I servizi permetteranno la creazione, l’invio e il recupero delle schede contenenti i dati necessari al monitoraggio delle fasi di aggiudicazione ed esecuzione di un appalto.  
 
 A titolo esemplificativo si riportano di seguito alcune ipotetiche schede dati:
@@ -234,12 +256,12 @@ Sarà possibile invocare anche i seguenti servizi facoltativi:
 -	ricerca-scheda: servizio che permette la ricerca della scheda sulla base dei criteri di input;
 -	consulta-scheda: servizio che consente la consultazione delle informazioni di dettaglio di una scheda dati.
 
-## 9.1	Flusso di Interoperabilità
+## 10.1	Flusso di Interoperabilità
 Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
 
 ![flusso di interoperabilità comunica post pubblicazione](../immagini/flusso-interoperabilita-comunica-post-pubblicazione.png)
 
-# 10	Contesto FVA
+# 11	Contesto FVA
 All’interno della NPA è costituito e mantenuto il Fascicolo Virtuale dell’Appalto (FVA) che ha l’obiettivo di gestire le informazioni digitali relative agli atti e/o avvisi di pertinenza dell’Appalto. 
 Nell’FVA confluisce quindi tutto il corpus informativo della gara d’appalto, che si viene a costituire dalle prime fasi del ciclo di gara.
 
@@ -253,12 +275,12 @@ I servizi facoltativi che l’SA potrà invocare relativamente al Fascicolo dell
 -	recupera-storico-fascicolo-fva: servizio che consente di recuperare la history e tutte le operazioni effettuate sul fascicolo;
 -	recupera-storico-documento-fva: servizio che consente di recuperare la history e tutte le operazioni effettuate sul documento.
 
-## 10.1	Flusso di Interoperabilità
+## 11.1	Flusso di Interoperabilità
 Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
 
 ![flusso di interoperabilità fva](../immagini/flusso-interoperabilita-fva.png)
 
-# 11	Contesto FVOE
+# 12	Contesto FVOE
 Il Fascicolo Virtuale dell’Operatore Economico è un componente del sistema che offre servizi sia alla SA che all’Operatore economico e ha l’obiettivo di raccogliere tutte informazioni e la documentazione afferente a un Operatore Economico che partecipa ad una gara.
 L’FVOE prevede sia l’esposizione di servizi API per l’integrazione con le piattaforme esterne, sia funzionalità con interfaccia Web per consentire l’accesso e le operazioni sul Fascicolo agli Operatori Economici.
 
@@ -274,12 +296,12 @@ I servizi facoltativi che l’SA potrà invocare relativamente al Fascicolo dell
 -	recuperaStoricoDocumento: attraverso l’invocazione di tale servizio sarà possibile recuperare la history e tutte le operazioni effettuate su quel documento;
 -	recupera-anagrafica-oe: tramite questo servizio sarà possibile recuperare l’anagrafica degli operatori economici immettendo come input il codice fiscale dell’OE.
 
-## 11.1	Flusso di Interoperabilità
+## 12.1	Flusso di Interoperabilità
 Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
 
 ![flusso di interoperabilità fvoe](../immagini/flusso-interoperabilita-fvoe.png)
 
-# 12	Servizi comuni
+# 13	Servizi comuni
 
 In questo capitolo si riportano i servizi comuni, ossia quelli che possono essere richiamati dalle Stazioni appaltanti in più contesti dell’NPA e che forniranno una risposta diversa a seconda della fase in cui vengono invocati:
 -	esito-operazione: tramite questo servizio è possibile recuperare l’esito di una determinata operazione;
@@ -291,7 +313,7 @@ Ritorna l’esito per le seguenti operazioni: “pubblica-pvviso”, “modifica
   - [SE il contesto è comunicaPostPubblicazione] recupero l’esito per le seguenti operazioni: “crea-scheda ”, “modifica-scheda”, “cancella-scheda”, “conferma-scheda”, “verifica-scheda”
 -	stato-appalto: tramite questo servizio è possibile conoscere lo stato dell’Appalto in un determinato momento.
 
-# 13	Contesto di sicurezza
+# 14	Contesto di sicurezza
 Le Linee Guida di interoperabilità PDND sono destinate ai soggetti di cui all’articolo 2, comma 2, del CAD, i quali favoriscono la conoscenza e l’utilizzo del patrimonio informativo detenuto per finalità istituzionali nonché la condivisione dei dati con i soggetti che hanno diritto di accedervi ai fini dell’attuazione dell’articolo 50 del CAD e della semplificazione degli adempimenti dei cittadini e delle imprese, in conformità alla disciplina vigente, assicurando le modalità di scambio telematico per il tramite di API così come previsto dal MoDI. 
 
 In particolare, i soggetti di cui all’articolo 2, comma 2, del CAD attuano le Linee Guida al fine di condividere i dati e le informazioni da essi detenuti, assicurando:
@@ -304,5 +326,5 @@ Le Linee Guida sono rivolte, altresì, ai soggetti privati che, unitamente ai ci
 In tale contesto, i soggetti di cui all’art. 2, comma 2 del CAD e i soggetti privati agiscono in qualità di soggetti fruitori della PDND.
 I soggetti fruitori che non fanno parte della PDND dovranno rispettare gli standard di interoperabilità MoDI.
 
-# 14	Interfaccia servizi
+# 15	Interfaccia servizi
 Le interfacce dei servizi sono definite secondo gli standard di interoperabilità tramite API dei sistemi informatici che tutte le pubbliche amministrazioni devono adottare al fine di garantire l’interoperabilità dei propri sistemi con quelli di altri soggetti a favorire l’implementazione complessiva del sistema informativo delle PA (ModI).
