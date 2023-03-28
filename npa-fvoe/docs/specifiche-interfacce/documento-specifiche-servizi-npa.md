@@ -20,6 +20,9 @@ La presenza nel documento dell'abbreviazione **[na]** (non applicabile) indica c
   | Portale Internet  | Punto di erogazione dei servizi web per gli utenti esterni ANAC |
   | Servizi ANAC  | Nucleo centralizzato di servizi che contengono la logica di Business dell’Autorità. |
   | FVA  | Fascicolo Virtuale dell'Appalto |
+  | SA  | Stazione Appaltante |
+  | PPL  | Piattaforma di Pubblicità legale |
+  | PDND  | Piattaforma Digitale Nazionale Dati |
   
   ## 2.1 Convenzioni di carattere generale
   ## 2.3	Convenzioni di progettazione
