@@ -1,0 +1,175 @@
+#  2021-01-09T00:01:18
+info:
+  commit: e45228232fa37d4946516e75fbf81ea2a8b78c74
+  date: 1610150478
+  description: |-
+    OpenAPI 3 templates and definitions for implementing
+    interoperable APIs.
+
+    The work is ongoing, your feedback is greatly appreciated!
+  version: 0.0.1
+components:
+    schemas:
+      StatoLottoEnum:
+        type: string
+        minimum: 1
+        enum: ['IN LAVORAZIONE', 'CONFERMATO', 'CANCELLATO', 'IN ATTESA DI PUBBLICAZIONE','IN PUBBLICAZIONE FERMATA','PUBBLICATO','NON AGGIUDICATO', 'AGGIUDICATO', 'IN SOTTOSCRIZIONE CONTRATTO','IN ESECUZIONE','ANNULLATO','SOSPESO', 'CONCLUSO','COLLAUDATO']
+        description: >
+            stato- Stato in cui si trova il lotto:
+             * 'IN LAVORAZIONE' - Appalto inviato in aatesa di CIG
+             * 'CONFERMATA' - Appalto inviato in aatesa di CIG
+             * 'CANCELLATA' - CIG assegnato alla Gara-Lotto
+             * 'IN ATTESA DI PUBBLICAZIONE' - Appalto pubblicato in TED/Gazzetta Italiana/Altro
+             * 'PUBBLICATA' - Appalto pubblicato in TED/Gazzetta Italiana/Altro
+             * 'AGGIUDICATA' - Appalto aggiudicato a un Operatore Econominco
+             * 'NON AGGIUDICATA' - Appalto aggiudicato a un Operatore Econominco
+             * 'IN SOTTOSCRIZIONE CONTRATTO' - In fase di definizione del contratto dell'appalto 
+             * 'IN ESECUZIONE' - il contratto di un appalto é in esecuzione
+             * 'ANNULLATA' - il 
+             * 'SOSPESA' - L'esecuzione dei lavori di un appalto sono sospesi
+             * 'CONCLUSA' - 
+             * 'COLLAUDATA' - L'Appalto si conclude con il collaudo dei lavori
+        example: "IN LAVORAZIONE" 
+      AFormType:
+        description: dati aggiuntivi per la gestione italiana della richiesta
+        type: object
+        properties:
+          body:
+            description: Definizione form lato ANAC in formato JSON 
+            type: string
+            example: 
+                    " Il Modello dati dinamico é presente al seguente URL https://github.com/anticorruzione/npa-docs/tree/3.04.7/PDF
+                    }"   
+      SchedaGenericType:
+        description: Oggetto che riporta tutti i dati della Pianificazione
+        type: object
+        additionalProperties: false
+        properties:
+          idScheda:
+            description: identificativo univoco della Scheda restituito da ANAC in fase di creazione Scheda
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+          versione:
+            description: versione della scheda. necessaria al motore interno ANAC.
+            type: string
+            example: '01.00.00'
+          dataCreazione:
+            description: data creazione della pianificazione (A datetime specified by RF3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+      AppaltoAdesioneType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+      FinanziamentoType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+      SoggAggiudicatarioType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+      IncaricatoType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+      DittaAusiliariaType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+      AdesioneType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+          Appalto:
+            $ref: '#/components/schemas/AppaltoAdesioneType'
+          Finanziamenti:
+            type: array
+            items:
+              $ref: '#/components/schemas/FinanziamentoType'
+          Aggiudicatari:
+            type: array
+            items:
+              $ref: '#/components/schemas/SoggAggiudicatarioType'
+          Incaricati:
+            type: array
+            items:
+              $ref: '#/components/schemas/IncaricatoType'
+          DitteAusiliarie:
+            type: array
+            items:
+            $ref: '#/components/schemas/DittaAusiliariaType'
+      MotivoRisoluzioneEnum:
+        type: string
+        minimum: 1
+        enum: ['Revoca dell''aggiudicazione definitiva','Recesso della stazione appaltante','Recesso dell''appaltatore','Recesso dal contratto (codice antimafia)','Fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell''appaltatore)','Dichiarazione giudiziale di inefficacia del contratto']
+        description: >
+          stato - Stato in cui si trova l'avviso:
+           * 'Revoca dell''aggiudicazione definitiva' - stato iniziale avviso  
+           * 'Risoluzione contrattuale' - l'Avviso é da pubblicare in TED e/o Gazzetta Italiana/Altro
+           * 'Recesso della stazione appaltante' - l'Avviso in TED e/o Gazzetta Italiana/Altro é stato fermato da uno stop pubblicazione
+           * 'Recesso dal contratto (codice antimafia)' - l'Avviso é stato pubblicato in TED e/o Gazzetta Italiana/Altro
+           * 'Fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell'appaltatore)' - l' Avviso non é stato pubblicato in TED e/o Gazzetta Italiana/Altro
+           * 'Dichiarazione giudiziale di inefficacia del contratto' - Descrizione
+        example: 'PUBBLICATO' 
+      MotivoInterruzioneType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+          codice:
+            description: obbligatorio
+            type: string
+          descrizione:
+            description: obbligatorio
+            type: string
+      ConclusioneType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+          codInterruzione:
+            $ref: '#/components/schemas/MotivoInterruzioneType'
+          codRisoluzione:
+            $ref: '#/components/schemas/MotivoRisoluzioneEnum'
+          dataRisoluzione:
+            description: data creazione della pianificazione (A datetime specified by RF3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+      PartecipanteType:
+        description: Oggetto che riporta tutti i dati della Partecipante
+        type: object
+        additionalProperties: false
+        properties:
+          codiceAnag:
+            description: codice Anagrafica presente in AUSA (???)
+            type: string
+            example: '1213DF56'
+      SchedaPartecipantiType:
+        allOf: # estende il modello dati SchedaGenericType
+          - $ref: '#/components/schemas/SchedaGenericType'
+        description: Oggetto che riporta tutti i dati della Scheda relativa Partecipanti
+        type: object
+        additionalProperties: false
+        properties:
+          partecipanti:
+            type: array
+            items:
+              $ref: '#/components/schemas/PartecipanteType'
+      SchedaAggiudicazioneType:
+        allOf: # estende il modello dati SchedaGenericType
+          - $ref: '#/components/schemas/SchedaGenericType'
+      SchedaType:
+        description: Scheda generica definita dal contesto in cui si trova l'appalto
+        oneOf:
+          - $ref: '#/components/schemas/SchedaPartecipantiType'
+          - $ref: '#/components/schemas/SchedaAggiudicazioneType'
