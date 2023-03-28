@@ -3,25 +3,26 @@ L’Autorità Nazionale Anticorruzione mette a disposizione la documentazione de
 
 # Documentazione
 ## Specifiche interfacce
-1. Il [file YAML](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-appalto.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Ciclo di vita dell'Appalto
-3. Il [file YAML](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-fvoe.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Fascicolo Virtuale dell'Operatore Economico
-4. Il [file YAML](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-fva.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Fascicolo Virtuale dell'Appalto
-5. Il [documento](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-fva.yaml) di sintesi di Specifica delle Interfacce 
+ - Il [file YAML](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-appalto.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Ciclo di vita dell'Appalto
+ - Il [file YAML](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-fvoe.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Fascicolo Virtuale dell'Operatore Economico
+ - Il [file YAML](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-fva.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Fascicolo Virtuale dell'Appalto
+ - Il [documento](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-fva.yaml) di sintesi di Specifica delle Interfacce 
 
 ## Modello dati
-1. Il [file YAML](/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml) contenente la definizione dinamica del modello dati referenziato nelle specifiche dei servizi esposti dalla NPA. *Esempio*:
+Il [file YAML](/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml) contenente la definizione dinamica del modello dati referenziato nelle specifiche dei servizi esposti dalla NPA. *Esempio*:
  ```shell
  StatoLottoEnum:
    $ref: 'https://github.com/anticorruzione/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoLottoEnum'
  ```
 
-
 ## Immagini
-1. Le immagini che rappresentano il contesto, i flussi di interoperabilità e le transizioni di stato per l'intero Ciclo di Vita dell’Appalto sono
+Le immagini che rappresentano il contesto, i flussi di interoperabilità e le transizioni di stato per l'intero Ciclo di Vita dell’Appalto sono
 consultabili nella cartella [immagini](/npa-fvoe/docs/immagini/).
+
 ## Diagrammi drawio
-1. I diagrammmi di contesto, di sequenza utilizzati per descrivere i flussi di interoperabilità e di stato sono
-consultabili nella cartella [immagini](/npa-fvoe/docs/diagrammi-drawio/) e sono stati disegnati mediante l'utilizzo di [Draw.io](https://www.draw.io/).
+I diagrammmi di contesto, di sequenza e di stato per l'intero Ciclo di Vita dell'Appalto sono consultabili nella cartella [diagrammi-drawio](/npa-fvoe/docs/diagrammi-drawio/). 
+Sono stati disegnati mediante l'utilizzo di [Draw.io](https://www.draw.io/).
+
 ## Orchestratore
 # Issue
 # Discamer
