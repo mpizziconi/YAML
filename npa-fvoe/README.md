@@ -28,10 +28,12 @@ La complessità della verifica durante l'acquisizione delle schede dati è gesti
 - verificare se la scheda dati passata in input è coerente con lo stato dell’Appalto
 - effettuare una validazione sintattica dei dati di input
 
-Lo schema delle regole di acquisizione di una schede dati è consultabile nella cartella [orchestratore](/npa-fvoe/docs/orchestratore/). 
-# Domande
-L'unico canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issues](https://github.com/domaltomare/YAML/issues) nella quale poter inserire una richiesta.
+Lo schema delle regole di acquisizione di una schede dati è consultabile nella cartella [orchestratore](/npa-fvoe/docs/orchestratore/).
 
-Si precisa che potrebbero non essere soddisfatte tutte le richieste pervenute.
+# Domande
+Il canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issues](https://github.com/domaltomare/YAML/issues) nella quale sarà possibile inserire una richiesta.
 
 # Disclaimer
+L’Autorità Nazionale Anticorruzione è sollevata da eventuali responsabilità a seguito:
+- mancata risposta a tutte le richieste pervenute o di competenza di organizzazioni esterne.
+- richieste pervenute al di fuori dell'unico canale di comunicazione delle Issues
