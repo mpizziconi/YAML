@@ -230,6 +230,10 @@ Sarà possibile invocare anche i seguenti servizi facoltativi:
 -	consulta-scheda: servizio che consente la consultazione delle informazioni di dettaglio di una scheda dati.
 
 ## 9.1	Flusso di Interoperabilità
+Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
+
+![flusso di interoperabilità comunica post pubblicazione](../immagini/flusso-interoperabilita-comunica-post-pubblicazione.png)
+
 # 10	Contesto FVA
 ## 10.1	Flusso di Interoperabilità
 # 11	Contesto FVOE
