@@ -137,7 +137,6 @@ Servizi <ins>facoltativi</ins>, una volta richiamato il creaPiano, possono esser
 ## 6.1	Flusso di Interoperabilità
 Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi che l’SA potrà richiamare in questa fase:
 
-
 ![flusso di interoperabilità pianificazione appalto](../immagini/flusso-interoperabilita-pianificazione-appalto.png)
 
 Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
