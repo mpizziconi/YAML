@@ -163,6 +163,10 @@ Servizi facoltativi, una volta richiamato il crea-appalto, possono essere i segu
 *	recupera-cig: servizio che consente il recupero dei CIG generati e assegnati ai lotti dell’Appalto. Lo stato dell’Appalto per poter richiamare tale servizio dovrà essere “CONFERMATO”.
 
 ## 7.1	Flusso di Interoperabilità
+Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi che l’SA potrà richiamare in questa fase:
+
+![flusso di interoperabilità comunica appalto](../immagini/flusso-interoperabilita-comunica-appalto.png)
+
 # 8	Contesto pubblicaAvviso
 ## 8.1	Flusso di Interoperabilità
 # 9	Contesto comunicaPostPubblicazione
