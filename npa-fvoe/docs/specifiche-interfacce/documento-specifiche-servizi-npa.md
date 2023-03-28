@@ -132,7 +132,7 @@ I servizi che devono essere obbligatoriamente richiamati per questo contesto del
 A seguito dell’invocazione di questo servizio, il Piano transita nello stato “IN LAVORAZIONE”;
 - **conferma-piano**: servizio che ha lo scopo di validare e confermare i dati del Piano. A seguito dell’invocazione di questo servizio, lo stato del Piano transita in “CONFERMATO”.
 
-Servizi facoltativi, una volta richiamato il creaPiano, possono essere invocati i seguenti servizi:
+Servizi facoltativi, una volta richiamato il crea-piano, possono essere invocati i seguenti servizi:
 - modifica-piano: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
 - verifica-piano: servizio di validazione dell’avviso di preinformazione in bozza. Tale validazione viene eseguita solo per l’ultima istanza del piano inviato e va a verificare il rispetto dell’obbligatorietà degli input rispetto alle regole di pubblicazione;
 - ricerca-piano: servizio che permette la ricerca del Piano sulla base dei criteri di input;
@@ -202,7 +202,7 @@ In questa fase del processo avviene la pubblicazione, a livello europeo e/o nazi
 **Descrizione servizi**
 
 I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
--	**pubblica-avviso**: attraverso l’invocazione di tale servizio viene richiesta la pubblicazione di un Avviso, a livello nazionale e/o europeo, relativo all’ultima istanza dell’Appalto validato e confermato mediante il servizio confermaAppalto. A seguito della chiamata a questo servizio, l’avviso transita in stato “IN ATTESA PUBBLICAZIONE”.
+-	**pubblica-avviso**: attraverso l’invocazione di tale servizio viene richiesta la pubblicazione di un Avviso, a livello nazionale e/o europeo, relativo all’ultima istanza dell’Appalto validato e confermato mediante il servizio conferma-appalto. A seguito della chiamata a questo servizio, l’avviso transita in stato “IN ATTESA PUBBLICAZIONE”.
 
 Sarà possibile invocare anche i seguenti servizi facoltativi:
 
