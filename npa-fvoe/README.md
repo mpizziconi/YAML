@@ -18,7 +18,7 @@ L’Autorità Nazionale Anticorruzione mette a disposizione la documentazione de
 
 ## Immagini
 1. Le immagini che rappresentano il contesto, i flussi di interoperabilità e le transizioni di stato per l'intero Ciclo di Vita dell’Appalto sono
-consultabili nella [cartella](/npa-fvoe/docs/immagini/).
+consultabili nella cartella [immagini](/npa-fvoe/docs/immagini/).
 ## Diagrammi drawio
 ## Orchestratore
 # Issue
