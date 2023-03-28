@@ -128,16 +128,16 @@ Il periodo coperto dall’avviso di preinformazione può durare al massimo dodic
 
 I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
 
-- **creaPiano**: servizio utile per l’inserimento in bozza di un avviso di preinformazione. 
+- **crea-piano**: servizio utile per l’inserimento in bozza di un avviso di preinformazione. 
 A seguito dell’invocazione di questo servizio, il Piano transita nello stato “IN LAVORAZIONE”;
-- **confermaPiano**: servizio che ha lo scopo di validare e confermare i dati del Piano. A seguito dell’invocazione di questo servizio, lo stato del Piano transita in “CONFERMATO”.
+- **conferma-piano**: servizio che ha lo scopo di validare e confermare i dati del Piano. A seguito dell’invocazione di questo servizio, lo stato del Piano transita in “CONFERMATO”.
 
 Servizi <ins>facoltativi</ins>, una volta richiamato il creaPiano, possono essere invocati i seguenti servizi:
-- modificaPiano: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
-- verificaPiano: servizio di validazione dell’avviso di preinformazione in bozza. Tale validazione viene eseguita solo per l’ultima istanza del piano inviato e va a verificare il rispetto dell’obbligatorietà degli input rispetto alle regole di pubblicazione;
-- ricercaPiano: servizio che permette la ricerca del Piano sulla base dei criteri di input;
-- consultaPiano: servizio che consente la consultazione delle informazioni di dettaglio di un Piano;
-- cancellaPiano: servizio di cancellazione logica della bozza del Piano creata o modificata. A seguito dell’invocazione di tale servizio, il Piano transita in stato “CANCELLATO” (Stato finale).
+- modifica-piano: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
+- verifica-piano: servizio di validazione dell’avviso di preinformazione in bozza. Tale validazione viene eseguita solo per l’ultima istanza del piano inviato e va a verificare il rispetto dell’obbligatorietà degli input rispetto alle regole di pubblicazione;
+- ricerca-piano: servizio che permette la ricerca del Piano sulla base dei criteri di input;
+- consulta-piano: servizio che consente la consultazione delle informazioni di dettaglio di un Piano;
+- cancella-piano: servizio di cancellazione logica della bozza del Piano creata o modificata. A seguito dell’invocazione di tale servizio, il Piano transita in stato “CANCELLATO” (Stato finale).
 
 ## 6.1	Flusso di Interoperabilità
 Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi che l’SA potrà richiamare in questa fase:
@@ -213,7 +213,7 @@ Sarà possibile invocare anche i seguenti servizi facoltativi:
 -	recupera-cig: servizio per il recupero dei CIG generati e assegnati ai lotti dell’Appalto. Il servizio è il medesimo descritto nel contesto di comunicaAppalto;
 -	ricerca-avviso: servizio per la ricerca degli avvisi di un appalto in base ai criteri di input. 
 -	consulta-avviso: servizio per la consultazione delle informazioni di dettaglio di un Avviso 
--	get-rendering-avviso: servizio per consentire la consultazione in formato pdf dell’Avviso.
+-	consulta-rendering-avviso: servizio per consentire la consultazione in formato pdf dell’Avviso.
 
 ## 9.1	Flusso di Interoperabilità
 Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
@@ -274,10 +274,10 @@ Nell’FVA confluisce quindi tutto il corpus informativo della gara d’appalto,
 **Descrizione dei servizi**
 
 I servizi facoltativi che l’SA potrà invocare relativamente al Fascicolo dell’Appalto sono i seguenti:
--	ricerca-fascicoliFVA: servizio che permette la ricerca di fascicoli dell’Appalto in base ai criteri di input;
--	recupera-fascicoloFVA: servizio che permette la consultazione delle informazioni di dettaglio di un fascicolo;
--	ricerca-documentiFVA: servizio che permette la ricerca dei documenti di un Fascicolo sulla base dei criteri di input;
--	recupera-documentoFVA: servizio che permette la consultazione delle informazioni di dettaglio di un documento;
+-	ricerca-fascicoli-fva: servizio che permette la ricerca di fascicoli dell’Appalto in base ai criteri di input;
+-	recupera-fascicolo-fva: servizio che permette la consultazione delle informazioni di dettaglio di un fascicolo;
+-	ricerca-documenti-fva: servizio che permette la ricerca dei documenti di un Fascicolo sulla base dei criteri di input;
+-	recupera-documento-fva: servizio che permette la consultazione delle informazioni di dettaglio di un documento;
 -	recupera-storico-fascicolo-fva: servizio che consente di recuperare la history e tutte le operazioni effettuate sul fascicolo;
 -	recupera-storico-documento-fva: servizio che consente di recuperare la history e tutte le operazioni effettuate sul documento.
 
@@ -295,13 +295,13 @@ L’FVOE prevede sia l’esposizione di servizi API per l’integrazione con le 
 **Descrizione dei servizi**
 
 I servizi facoltativi che l’SA potrà invocare relativamente al Fascicolo dell’Operatore economico sono i seguenti:
--	richiedi-accesso-fvoe: servizio che permettedi richiedere l’accesso alle informazioni di dettaglio del fascicolo di un OE immettendo in input il codice fiscale dell’OE e il CIG;
--	verifica-stato-richiesta-accesso: servizio che permette di conoscere lo stato della richiesta di accesso al fascicolo inoltrata attraverso l’invocazione del servizio richiediAccessoFVOE;
--	ricerca-documenti: servizio che permette la ricerca dei documenti di un Fascicolo sulla base dei criteri di input;
--	recupera-documento: servizio che permette la consultazione delle informazioni di dettaglio di un documento;
+-	richiesta-accesso-fvoe: servizio che permettedi richiedere l’accesso alle informazioni di dettaglio del fascicolo di un OE immettendo in input il codice fiscale dell’OE e il CIG;
+-	verifica-richiesta-accesso-fvoe: servizio che permette di conoscere lo stato della richiesta di accesso al fascicolo inoltrata attraverso l’invocazione del servizio richiediAccessoFVOE;
+-	ricerca-documenti-fvoe: servizio che permette la ricerca dei documenti di un Fascicolo sulla base dei criteri di input;
+-	recupera-documento-fvoe: servizio che permette la consultazione delle informazioni di dettaglio di un documento;
 -	richiedi-documento: servizio che consente di richiedere agli enti certificatori un documento specifico;
--	recupera-documento: servizio che consente di recuperare il documento richiesto;
--	recuperaStoricoDocumento: attraverso l’invocazione di tale servizio sarà possibile recuperare la history e tutte le operazioni effettuate su quel documento;
+-	recupera-documento-fvoe: servizio che consente di recuperare il documento richiesto;
+-	recupera-storico-documento-fvoe: attraverso l’invocazione di tale servizio sarà possibile recuperare la history e tutte le operazioni effettuate su quel documento;
 -	recupera-anagrafica-oe: tramite questo servizio sarà possibile recuperare l’anagrafica degli operatori economici immettendo come input il codice fiscale dell’OE.
 
 ## 12.1	Flusso di Interoperabilità
