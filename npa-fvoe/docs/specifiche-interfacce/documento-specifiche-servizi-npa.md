@@ -194,6 +194,8 @@ Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi c
 
 ![flusso di interoperabilità comunica appalto](../immagini/flusso-interoperabilita-comunica-appalto.png)
 
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
+
 # 9	Contesto pubblicaAvviso
 In questa fase del processo avviene la pubblicazione, a livello europeo e/o nazionale, degli avvisi relativi all’Appalto o ad una delle schede successive che prevedono la pubblicazione (ad esempio: aggiudicazione, modifica contrattuale, ecc).
 
@@ -217,6 +219,8 @@ Sarà possibile invocare anche i seguenti servizi facoltativi:
 Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
 
 ![flusso di interoperabilità pubblica avviso](../immagini/flusso-interoperabilita-pubblica-avviso.png)
+
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 # 10	Contesto comunicaPostPubblicazione
 In questo contesto rientrano tutti i servizi richiamabili dalla SA finalizzati alla gestione delle fasi del ciclo di vita dell’Appalto successive alla pubblicazione di un bando di gara. I servizi permetteranno la creazione, l’invio e il recupero delle schede contenenti i dati necessari al monitoraggio delle fasi di aggiudicazione ed esecuzione di un appalto.  
@@ -261,6 +265,8 @@ Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei va
 
 ![flusso di interoperabilità comunica post pubblicazione](../immagini/flusso-interoperabilita-comunica-post-pubblicazione.png)
 
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
+
 # 11	Contesto FVA
 All’interno della NPA è costituito e mantenuto il Fascicolo Virtuale dell’Appalto (FVA) che ha l’obiettivo di gestire le informazioni digitali relative agli atti e/o avvisi di pertinenza dell’Appalto. 
 Nell’FVA confluisce quindi tutto il corpus informativo della gara d’appalto, che si viene a costituire dalle prime fasi del ciclo di gara.
@@ -279,6 +285,8 @@ I servizi facoltativi che l’SA potrà invocare relativamente al Fascicolo dell
 Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
 
 ![flusso di interoperabilità fva](../immagini/flusso-interoperabilita-fva.png)
+
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 # 12	Contesto FVOE
 Il Fascicolo Virtuale dell’Operatore Economico è un componente del sistema che offre servizi sia alla SA che all’Operatore economico e ha l’obiettivo di raccogliere tutte informazioni e la documentazione afferente a un Operatore Economico che partecipa ad una gara.
@@ -300,6 +308,8 @@ I servizi facoltativi che l’SA potrà invocare relativamente al Fascicolo dell
 Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
 
 ![flusso di interoperabilità fvoe](../immagini/flusso-interoperabilita-fvoe.png)
+
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 # 13	Servizi comuni
 
