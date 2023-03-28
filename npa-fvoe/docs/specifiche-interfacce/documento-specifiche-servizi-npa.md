@@ -192,6 +192,43 @@ Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei va
 ![flusso di interoperabilità pubblica avviso](../immagini/flusso-interoperabilita-pubblica-avviso.png)
 
 # 9	Contesto comunicaPostPubblicazione
+In questo contesto rientrano tutti i servizi richiamabili dalla SA finalizzati alla gestione delle fasi del ciclo di vita dell’Appalto successive alla pubblicazione di un bando di gara. I servizi permetteranno la creazione, l’invio e il recupero delle schede contenenti i dati necessari al monitoraggio delle fasi di aggiudicazione ed esecuzione di un appalto.  
+
+A titolo esemplificativo si riportano di seguito alcune ipotetiche schede dati:
+-	Elenco Partecipanti
+-	Aggiudicazione
+-	Avvio Contratto
+-	Avanzamento Contratto
+-	Conclusione Contratto
+-	Collaudo Contratto
+-	Sospensione
+-	Ripresa Esecuzione Contratto
+-	Risoluzione Contratto
+-	Modifica Contratto
+-	Subappalto
+-	Recesso
+-	Contenzioso
+-	Accordo Quadro
+
+**Descrizione servizi**
+
+I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
+-	**crea-scheda**: servizio che consente l’inserimento di una scheda dati che può essere relativa sia alla fase di aggiudicazione sia a quella di esecuzione. La scheda, a seguito dell’invocazione del servizio, transita nello stato “IN LAVORAZIONE”;
+-	**conferma-scheda**: il servizioserve a confermare i dati della Scheda e per poter essere invocato è necessario che questa sia in stato “IN LAVORAZIONE” dopo la creazione o modifica di una scheda in bozza. Il sistema, attraverso l’invocazione del servizio verifica-scheda, provvede alla validazione dei dati della scheda. Tale validazione è orchestrata da un Workflow Engine che, tramite il suo motore di regole effettua le seguenti operazioni:
+  - verifica se la scheda dati è coerente con lo stato dell’Appalto;
+  - effettua una validazione sintattica dei dati di input. 
+
+Nel caso in cui si tratti di una scheda che prevede la pubblicazione sulla Piattaforma nazionale o sul TED il sistema invocherà il servizio pubblica-avviso per completare la transizione allo stato successivo dell’Appalto o per poter confermare la scheda successiva in lavorazione. 
+
+Sarà possibile invocare anche i seguenti servizi facoltativi:
+-	modifica-scheda: servizio generico che sostituisce integralmente la precedente scheda inviata con una nuova bozza. La scheda rimane nello stato “IN LAVORAZIONE” e  il servizio sarà invocabile ciclicamente finché non sarà invocato il servizio confermaScheda;
+-	verifica-scheda: servizio che consente la validazione di una scheda dati; tale validazione è orchestrata da un Workflow Engine che, tramite il suo motore di regole effettua le seguenti operazioni:
+  - verifica se la scheda dati è coerente con lo stato dell’Appalto;
+  - effettua una validazione sintattica dei dati di input. 
+-	cancella-scheda: servizio di cancellazione logica di una scheda in stato bozza. Per poter invocare il servizio, la scheda deve essere in stato “IN LAVORAZIONE” e a seguito della chiamata transiterà in stato “CANCELLATA”.
+-	ricerca-scheda: servizio che permette la ricerca della scheda sulla base dei criteri di input;
+-	consulta-scheda: servizio che consente la consultazione delle informazioni di dettaglio di una scheda dati.
+
 ## 9.1	Flusso di Interoperabilità
 # 10	Contesto FVA
 ## 10.1	Flusso di Interoperabilità
