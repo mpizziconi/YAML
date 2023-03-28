@@ -1658,11 +1658,11 @@ paths:
         - apiKeyAuth: []
         - applicationDB_auth:
             - write:NPA
-  /ricerca-incaricato:
+  /ricerca-soggetti:
     get:
       tags:
         -  presaInCarico
-      summary: API Rest per la ricerca Incaricati. SINCRONO
+      summary: API Rest per la ricerca dei spggetti incaricati. SINCRONO
       description: viene recuperata la lista con i dati di sintesi dei soggetti incaricati. SINCRONO
       operationId: idIncaricatoRicerca
       parameters:
@@ -2836,4 +2836,4 @@ components:
     apiKeyAuth:
       type: apiKey
       name: apiKeyAuth # name of the header, query parameter or cookie
-      in: header  # can be "header", "query" or "cookie"          
+      in: header  # can be "header", "query" or "cookie"
