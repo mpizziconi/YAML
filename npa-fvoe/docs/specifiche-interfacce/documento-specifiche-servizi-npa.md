@@ -235,7 +235,24 @@ Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei va
 ![flusso di interoperabilità comunica post pubblicazione](../immagini/flusso-interoperabilita-comunica-post-pubblicazione.png)
 
 # 10	Contesto FVA
+All’interno della NPA è costituito e mantenuto il Fascicolo Virtuale dell’Appalto (FVA) che ha l’obiettivo di gestire le informazioni digitali relative agli atti e/o avvisi di pertinenza dell’Appalto. 
+Nell’FVA confluisce quindi tutto il corpus informativo della gara d’appalto, che si viene a costituire dalle prime fasi del ciclo di gara.
+
+**Descrizione dei servizi**
+
+I servizi facoltativi che l’SA potrà invocare relativamente al Fascicolo dell’Appalto sono i seguenti:
+-	ricerca-fascicoliFVA: servizio che permette la ricerca di fascicoli dell’Appalto in base ai criteri di input;
+-	recupera-fascicoloFVA: servizio che permette la consultazione delle informazioni di dettaglio di un fascicolo;
+-	ricerca-documentiFVA: servizio che permette la ricerca dei documenti di un Fascicolo sulla base dei criteri di input;
+-	recupera-documentoFVA: servizio che permette la consultazione delle informazioni di dettaglio di un documento;
+-	recupera-storico-fascicolo-fva: servizio che consente di recuperare la history e tutte le operazioni effettuate sul fascicolo;
+-	recupera-storico-documento-fva: servizio che consente di recuperare la history e tutte le operazioni effettuate sul documento.
+
 ## 10.1	Flusso di Interoperabilità
+Di seguito si riporta il diagramma di sequenza che illustra le interfacce dei vari servizi e le interazioni con i sistemi esterni:
+
+![flusso di interoperabilità fva](../immagini/flusso-interoperabilita-fva.png)
+
 # 11	Contesto FVOE
 ## 11.1	Flusso di Interoperabilità
 # 12	Servizi comuni
