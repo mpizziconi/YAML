@@ -34,4 +34,4 @@ L'unico canale di comunicazione con ANAC è rappresentato dall'apposita sezione 
 
 Si precisa che potrebbero non essere soddisfatte tutte le richieste pervenute.
 
-# Discamer
+# Disclaimer
