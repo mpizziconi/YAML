@@ -128,7 +128,7 @@ A seguito dell’invocazione di questo servizio, il Piano transita nello stato �
 - **confermaPiano**: servizio che ha lo scopo di validare e confermare i dati del Piano. A seguito dell’invocazione di questo servizio, lo stato del Piano transita in “CONFERMATO”.
 
 Servizi <ins>facoltativi</ins>, una volta richiamato il creaPiano, possono essere invocati i seguenti servizi:
-- <modificaPiano: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
+- modificaPiano: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
 - verificaPiano: servizio di validazione dell’avviso di preinformazione in bozza. Tale validazione viene eseguita solo per l’ultima istanza del piano inviato e va a verificare il rispetto dell’obbligatorietà degli input rispetto alle regole di pubblicazione;
 - ricercaPiano: servizio che permette la ricerca del Piano sulla base dei criteri di input;
 - consultaPiano: servizio che consente la consultazione delle informazioni di dettaglio di un Piano;
@@ -142,6 +142,23 @@ Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi c
 Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 # 7	Contesto comunicaAppalto
+In questa fase del processo avviene la creazione dell’appalto, la formalizzazione dei fabbisogni della SA e, al termine di tutte le verifiche necessarie, l’emissione del CIG.
+I servizi di seguito descritti potranno essere pertanto richiamati dalle SA fino all’emissione dei CIG ai diversi lotti che compongono l’Appalto: l’Appalto, fino a quel momento, sarà in uno stato di “bozza”.
+Descrizione servizi
+I servizi che devono essere obbligatoriamente richiamati per questo contesto del ciclo di vita dell’Appalto sono i seguenti:
+-	crea-appalto: servizio che consente l’inserimento della prima istanza (in bozza) di un Appalto. A seguito dell’invocazione di questo servizio, l’Appalto transita in stato “IN LAVORAZIONE”;
+-	conferma-appalto: tale servizio serve a confermare i dati dell’Appalto e ad assegnare i CIG.
+Servizi facoltativi, una volta richiamato il crea-appalto, possono essere i seguenti:
+-	modifica-appalto: servizio che va a sostituire integralmente la precedente istanza dell’Appalto con una nuova bozza, pertanto solo l’ultima istanza ricevuta dell’Appalto sarà oggetto delle successive fasi del processo. L’Appalto rimane in stato “IN LAVORAZIONE”;
+-	verifica-appalto: servizio che consente la validazione dell’ultima istanza di Appalto ricevuta. Il servizio verifica il rispetto dell’obbligatorietà degli input rispetto alle regole di pubblicazione:
+	eForms di gara: input obbligatorio in caso di pubblicazione europea. 
+	espdRequest: input obbligatorio in caso di pubblicazione europea e nazionale o solo nazionale (la pubblicazione nazionale è sempre mandatoria in presenza di quella europea)
+	anacForm: input obbligatorio in caso di pubblicazione europea e nazionale o solo nazionale (la pubblicazione nazionale è sempre mandatoria in presenza di quella europea)
+‒	cancella-appalto: servizio che consente, qualora lo stato dell’Appalto sia “IN LAVORAZIONE”, la cancellazione logica di un Appalto in bozza. a seguito dell’invocazione di questo servizio l’Appalto transita in stato “CANCELLATO”;
+‒	ricerca-appalto: servizio che permette la ricerca dell’Appalto sulla base dei criteri di input. Lo stato dell’Appalto, per poter invocare il servizio, dovrà essere “IN LAVORAZIONE”, ”CANCELLATO”, “CONFERMATO”;
+‒	consulta-appalto: servizio che consente la consultazione delle informazioni di dettaglio di un Appalto;
+‒	recupera-cig: servizio che consente il recupero dei CIG generati e assegnati ai lotti dell’Appalto. Lo stato dell’Appalto per poter richiamare tale servizio dovrà essere “CONFERMATO”.
+
 ## 7.1	Flusso di Interoperabilità
 # 8	Contesto pubblicaAvviso
 ## 8.1	Flusso di Interoperabilità
