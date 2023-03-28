@@ -226,10 +226,10 @@ I servizi che devono essere obbligatoriamente richiamati per questo contesto del
 Nel caso in cui si tratti di una scheda che prevede la pubblicazione sulla Piattaforma nazionale o sul TED il sistema invocherà il servizio pubblica-avviso per completare la transizione allo stato successivo dell’Appalto o per poter confermare la scheda successiva in lavorazione. 
 
 Sarà possibile invocare anche i seguenti servizi facoltativi:
-- modifica-scheda: servizio generico che sostituisce integralmente la precedente scheda inviata con una nuova bozza. La scheda rimane nello stato “IN LAVORAZIONE” e  il servizio sarà invocabile ciclicamente finché non sarà invocato il servizio confermaScheda;
-- verifica-scheda: servizio che consente la validazione di una scheda dati; tale validazione è orchestrata da un Workflow Engine che, tramite il suo motore di regole effettua le seguenti operazioni:
- - verifica se la scheda dati è coerente con lo stato dell’Appalto; 
- - effettua una validazione sintattica dei dati di input. 
+-	modifica-scheda: servizio generico che sostituisce integralmente la precedente scheda inviata con una nuova bozza. La scheda rimane nello stato “IN LAVORAZIONE” e  il servizio sarà invocabile ciclicamente finché non sarà invocato il servizio confermaScheda;
+-	verifica-scheda: servizio che consente la validazione di una scheda dati; tale validazione è orchestrata da un Workflow Engine che, tramite il suo motore di regole effettua le seguenti operazioni:
+ -	verifica se la scheda dati è coerente con lo stato dell’Appalto; 
+ -	effettua una validazione sintattica dei dati di input. 
 -	cancella-scheda: servizio di cancellazione logica di una scheda in stato bozza. Per poter invocare il servizio, la scheda deve essere in stato “IN LAVORAZIONE” e a seguito della chiamata transiterà in stato “CANCELLATA”.
 -	ricerca-scheda: servizio che permette la ricerca della scheda sulla base dei criteri di input;
 -	consulta-scheda: servizio che consente la consultazione delle informazioni di dettaglio di una scheda dati.
