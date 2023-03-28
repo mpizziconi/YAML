@@ -62,7 +62,7 @@ Nel seguente diagramma di contesto sono rappresentati i servizi dell’NPA espos
 
 ![diagramma di contesto](../immagini/contesto.png)
 
-Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 ## 5.2	Flusso di Interoperabilità
 Nel presente paragrafo si rappresentano i flussi di interoperabilità di tutto il ciclo di appalto attraverso l’uso del Sequence Diagram:
@@ -73,7 +73,7 @@ Nel presente paragrafo si rappresentano i flussi di interoperabilità di tutto i
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) Nome servizio = Servizi che richiamano la PPl o TED (esterne rispetto all’NPA) per la pubblicazione nazionale o europea.
 - Nome servizio = Servizi che richiamano contesti e componenti interne all’NPA.
 
-Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 ## 5.3	Diagramma a stati
 Nei paragrafi che seguono sono illustrati, attraverso diagrammi a stati, i passaggi di stato per le seguenti entità coinvolte:
@@ -89,21 +89,21 @@ Il diagramma seguente illustra i cambi di stato dell’entità Appalto:
 
 ![diagramma a stati dell'Appalto](../immagini/diagramma-stati-appalto.png)
 
-Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 ### 5.3.2 Diagramma a stati Avviso
 Il diagramma seguente illustra i cambi di stato dell’entità Avviso:
 
 ![diagramma a stati dell'Avviso](../immagini/diagramma-stati-avviso.png)
 
-Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 ### 5.3.3 Diagramma a stati TED
 Il diagramma seguente illustra i cambi di stato dell’entità Notice di TED:
 
 ![diagramma a stati dell'Avviso in TED](../immagini/diagramma-stati-ted.png)
 
-Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 # 6	Contesto pianificazioneAppalto
 Nel seguente contesto sono inclusi i servizi utilizzabili dalla SA utili alla gestione della prima fase di pianificazione e programmazione mediante la creazione e la conferma dell’Avviso di Preinformazione.
@@ -140,7 +140,7 @@ Di seguito si riporta la rappresentazione tramite Sequence Diagram dei servizi c
 
 ![flusso di interoperabilità pianificazione appalto](../immagini/flusso-interoperabilita-pianificazione-appalto.png)
 
-Nella seguente [cartella](/Diagrammi-Draw.io/), è consultabile il diagramma drawio.
+Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 # 7	Contesto comunicaAppalto
 ## 7.1	Flusso di Interoperabilità
