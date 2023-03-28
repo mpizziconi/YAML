@@ -5,7 +5,7 @@ L’Autorità Nazionale Anticorruzione mette a disposizione la documentazione de
 ## Specifiche interfacce
  - Il [file YAML](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-appalto.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Ciclo di vita dell'Appalto
  - Il [file YAML](/npa-fvoe/docs/specifiche-interfacce/specifiche-servizi-fvoe-fva.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Fascicolo Virtuale dell'Operatore Economico e del Fascicolo Virtuale dell'Appalto
- - Il [documento](/npa-fvoe/docs/specifiche-interfacce/documento-specifiche-servizi-npa.md) di sintesi di Specifica delle Interfacce 
+ - Il [documento](/npa-fvoe/docs/specifiche-interfacce/documento-specifiche-servizi-npa.md) di sintesi di Specifica delle Interfacce redatto utilizzando il linguaggio di markup Markdown
 
 ## Modello dati
 Il [file YAML](/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml) contenente la definizione dinamica del modello dati referenziato nelle specifiche dei servizi esposti dalla NPA. *Esempio*:
