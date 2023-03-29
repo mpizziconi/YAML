@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Integrazione B2B Appalti - OpenAPI 3.0
+  title: Specifiche Servizi Appalto - OpenAPI 3.0
   x-summary: >-
     Questo servizio ritorna la data e l'ora attuali in UTC.
   description: |-
@@ -62,9 +62,9 @@ info:
   termsOfService: 'http://swagger.io/terms/'
   # Chi posso contattare per informazioni sul servizio e sul suo stato?
   contact:
-    email: mario.rossi@anticorruzione.it
-    name: Mario Rossi
-    url: https://twitter.com/ioggstream
+    email: ufficio.uscp@anticorruzione.it
+    name: ANAC - Ufficio Servizi IT Contratti Pubblici
+    url: https://www.anticorruzione.it
   # L'audience delle API. Attualmente e' definito solamente
   #   la tipologia `public`.
   x-audience:
@@ -73,16 +73,14 @@ info:
   #   rispetto al `title`.
   x-api-id: 00000000-0000-0000-0000-000000000000
   license:
-    name: Apache 2.0
-    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+    name: Licenza Pubblica dell'Unione Europea v. 1.2
+    url: 'https://eupl.eu/1.2/it/'
   # Per dare indicazioni sul ciclo di vita dell'API
   # si puo' usare un parametro come:
   x-lifecycle:
-    published: 1970-01-01
-    deprecated: 2050-01-01
-    retired: 2050-06-01
+    published: 2023-03-31
     maturity: published  
-  version: 1.0.5
+  version: 1.0.0
 servers:
   - url: https://repositorydocument.swagger.io/api/v1
     description: Development server
@@ -175,8 +173,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA
   /modifica-piano:
     post:
       tags:
@@ -209,8 +205,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'  
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA
   /cancella-piano:
     post:
       tags:
@@ -256,8 +250,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA          
   /consulta-piano:
     get:
       tags:
@@ -290,8 +282,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA
   /ricerca-piano:
     get:
       tags:
@@ -353,8 +343,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - read:NPA                
   /verifica-piano:
     post:
       tags:
@@ -383,8 +371,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA       
   /conferma-piano:
     post:
       tags:
@@ -438,8 +424,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA                        
   /crea-appalto:
     post:
       tags:
@@ -491,8 +475,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA
   /modifica-appalto:
     post:
       tags:
@@ -525,8 +507,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'  
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA
   /cancella-appalto:
     post:
       tags:
@@ -572,8 +552,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA          
   /ricerca-appalto:
     get:
       tags:
@@ -649,8 +627,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - read:NPA                
   /consulta-appalto:
     get:
       tags:
@@ -690,8 +666,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'       
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - read:NPA  
   /verifica-appalto:
     post:
       tags:
@@ -720,8 +694,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'          
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA       
   /conferma-appalto:
     post:
       tags:
@@ -769,8 +741,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'   
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA            
   /stato-appalto:
     get:
       tags:
@@ -804,8 +774,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA                
   /recupera-cig:
     get:
       tags:
@@ -872,8 +840,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA            
   /pubblica-avviso:
     post:
       tags:
@@ -903,8 +869,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA            
   /modifica-avviso:
     post:
       tags:
@@ -937,8 +901,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA  
   /rettifica-avviso:
     post:
       tags:
@@ -971,10 +933,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:FVA 
-        - applicationDB_auth:
-            - write:NPA    
   /cancella-avviso:
     post:
       tags:
@@ -1015,10 +973,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:FVA 
-        - applicationDB_auth:
-            - write:NPA  
   /ricerca-avviso:
     get: 
       tags:
@@ -1120,8 +1074,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - read:NPA
   /consulta-avviso:
     get:
       tags:
@@ -1155,8 +1107,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - read:NPA          
   /consulta-rendering-avviso:
     get:
       tags:
@@ -1190,8 +1140,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - read:NPA          
   /stato-avviso:
     get:
       tags:
@@ -1225,8 +1173,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA              
   /crea-scheda:
     post:
       tags:
@@ -1259,8 +1205,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:FVA
   /modifica-scheda:
     post:
       tags:
@@ -1292,8 +1236,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'  
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:FVA
   /cancella-scheda:
     post:
       tags:
@@ -1339,8 +1281,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:FVA  
   /ricerca-scheda:
     get:
       tags:
@@ -1420,8 +1360,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:FVA 
   /consulta-scheda:
     get:
       tags:
@@ -1455,8 +1393,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:FVA
   /verifica-scheda:
     post:
       tags:
@@ -1485,8 +1421,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA       
   /conferma-scheda:
     post:
       tags:
@@ -1540,8 +1474,6 @@ paths:
             $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA                        
   /esito-operazione:
     get:
       tags:
@@ -1615,8 +1547,6 @@ paths:
                   $ref: '#/components/schemas/ErrorResponse'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA
   /associa-responsabile-soggetto:
     post:
       tags:
@@ -1656,8 +1586,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA
   /ricerca-soggetti:
     get:
       tags:
@@ -1708,8 +1636,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - read:NPA
   /aggiungi-soggetto:
     post:
       tags:
@@ -1742,8 +1668,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA
   /elimina-soggetto:
     post:
       tags:
@@ -1776,9 +1700,6 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-        - applicationDB_auth:
-            - write:NPA            
-
 components:
   headers:
     Retry-After:
@@ -2824,15 +2745,6 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
   securitySchemes:
-    applicationDB_auth:
-      type: oauth2
-      flows:
-        authorizationCode:
-          authorizationUrl: https://oauth/authorize 
-          tokenUrl: https://oauth/token             
-          scopes:
-            write:NPA: modifica dati della componente NuovaPiattaformaAppalti
-            read:NPA: lettura dati della componente NuovaPiattaformaAppalti
     apiKeyAuth:
       type: apiKey
       name: apiKeyAuth # name of the header, query parameter or cookie
