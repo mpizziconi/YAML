@@ -4,3 +4,5 @@
 > *Luglio 2023*: disponibilità dell'ambiente di qualificazione
 
 > *Ottobre 2023*: piattaforma in ambiente di produzione
+
+> *Giugno 2024*: rilascio ulteriori funzionalità per il FVOE
