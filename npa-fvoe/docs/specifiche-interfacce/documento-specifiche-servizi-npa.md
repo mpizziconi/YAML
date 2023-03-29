@@ -8,7 +8,7 @@ La presenza nel documento dell'abbreviazione **[tbc]** (to be confirmed) indica 
 La presenza nel documento dell'abbreviazione **[na]** (non applicabile) indica che un argomento previsto nello standard di struttura di questo documento, risulta privo di significato nel contesto di questo sistema.
 
   
-  |  |  | 
+  | Termine/Acronimo | Descrizione | 
   | ------------- | ------------- | 
   | AVCP  | Autorità per la Vigilanza Contratti Pubblici(dal 2014 accorpata nell’ANAC). |
   | ANAC  | Autorità Nazionale Anticorruzione |  
