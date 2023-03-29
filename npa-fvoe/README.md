@@ -33,5 +33,5 @@ Il canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issu
 
 # Disclaimer
 L’Autorità Nazionale Anticorruzione è sollevata da eventuali responsabilità dovute a:
-- mancata risposta a richieste pervenute o di competenza di organizzazioni esterne.
 - richieste pervenute al di fuori dell'unico canale di comunicazione con ANAC rappresentato dalla sezione [Issues](https://github.com/domaltomare/YAML/issues)
+- eventuale mancata risposta a richieste pervenute nell'apposita sezione Issues o di competenza di organizzazioni esterne.
