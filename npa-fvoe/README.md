@@ -1,5 +1,5 @@
 # Descrizione
-L’Autorità Nazionale Anticorruzione mette a disposizione la documentazione dei servizi di cooperazione applicativa della Nuova Piattaforma Appalti (NPA)
+Il repository contiene la documentazione tecnica dei servizi di cooperazione applicativa per integrarsi con la Nuova Piattaforma Appalti (NPA) messa a disposizione sall'’Autorità Nazionale Anticorruzione (ANAC)
 
 # Documentazione
 ## Specifiche interfacce
