@@ -22,7 +22,7 @@ consultabili nella cartella [immagini](/npa-fvoe/docs/immagini/).
 I diagrammmi di contesto, di sequenza e di stato per l'intero Ciclo di Vita dell'Appalto sono consultabili nella cartella [diagrammi-drawio](/npa-fvoe/docs/diagrammi-drawio/) e, sono stati disegnati mediante l'utilizzo di [Draw.io](https://www.draw.io/).
 
 ## Orchestratore
-La complessità della verifica durante l'acquisizione delle schede dati è gestita dal componente NPA di orchestrazione che, tramite il suo motore di regole, ha il compito di:
+La complessità delle verifiche durante l'acquisizione delle schede dati è gestita dal componente NPA di orchestrazione che, tramite il suo motore di regole, ha il compito di:
 - verificare se la scheda dati passata in input è coerente con lo stato dell’Appalto
 - effettuare una validazione sintattica dei dati di input
 
