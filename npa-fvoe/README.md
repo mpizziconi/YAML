@@ -32,6 +32,6 @@ Lo schema delle regole di acquisizione di una schede dati è consultabile nella 
 Il canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issues](https://github.com/domaltomare/YAML/issues) nella quale sarà possibile inserire una richiesta.
 
 # Disclaimer
-L’Autorità Nazionale Anticorruzione è sollevata da eventuali responsabilità dovute a:
-- richieste pervenute al di fuori dell'unico canale di comunicazione con ANAC rappresentato dalla sezione [Issues](https://github.com/domaltomare/YAML/issues)
-- eventuale mancata risposta a richieste pervenute nell'apposita sezione Issues o di competenza di organizzazioni esterne.
+L’Autorità Nazionale Anticorruzione è sollevata da eventuali responsabilità dovuta:
+- alla mancanza di risposta per richieste pervenute al di fuori dell'unico canale di comunicazione con ANAC rappresentato dalla sezione [Issues](https://github.com/domaltomare/YAML/issues)
+- non tutte le richieste pervenute nell'apposita sezione Issues potrebbero essere soddisfatte o potrebbero essere di competenza di organizzazioni esterne.
