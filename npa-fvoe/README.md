@@ -1,5 +1,5 @@
 # Descrizione
-Il repository contiene la documentazione tecnica dei servizi di cooperazione applicativa per integrarsi con la Nuova Piattaforma Appalti (NPA) messa a disposizione dall'’Autorità Nazionale Anticorruzione (ANAC) per la gestione dell’ecosistema nazionale di approvvigionamento digitale.
+Il repository contiene la documentazione tecnica dei servizi di cooperazione applicativa per integrarsi con la Nuova Piattaforma Appalti (NPA) messa a disposizione dall'’Autorità Nazionale Anticorruzione (ANAC) per governare l’ecosistema nazionale di approvvigionamento digitale per la gestione degli appalti pubblici.
 
 # Documentazione
 ## Specifiche interfacce
