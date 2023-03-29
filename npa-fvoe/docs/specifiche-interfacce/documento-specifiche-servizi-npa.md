@@ -10,7 +10,6 @@ La presenza nel documento dell'abbreviazione **[na]** (non applicabile) indica c
   
   | Termine/Acronimo | Descrizione | 
   | ------------- | ------------- | 
-  | AVCP  | Autorità per la Vigilanza Contratti Pubblici(dal 2014 accorpata nell’ANAC). |
   | ANAC  | Autorità Nazionale Anticorruzione |  
   | Autorità  | Si riferisce all’ANAC |
   | UAFI  | Ufficio Analisi Flussi Informativi |
