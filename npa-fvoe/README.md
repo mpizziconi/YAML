@@ -1,5 +1,5 @@
 # Descrizione
-Il repository contiene la documentazione tecnica dei servizi di cooperazione applicativa per integrarsi con la Nuova Piattaforma Appalti (NPA) messa a disposizione dall'’Autorità Nazionale Anticorruzione (ANAC), per governare l’ecosistema nazionale di approvvigionamento digitale per la gestione degli appalti pubblici.
+Il repository contiene la documentazione tecnica dei servizi di cooperazione applicativa per integrarsi con la Nuova Piattaforma Appalti (NPA) e con il Fascicolo Virtuale dell'Operatore Economico (FVOE) messi a disposizione dall'’Autorità Nazionale Anticorruzione (ANAC), per governare l’ecosistema nazionale di approvvigionamento digitale per la gestione degli appalti pubblici.
 
 # Documentazione
 ## Specifiche interfacce
@@ -8,6 +8,7 @@ Il repository contiene la documentazione tecnica dei servizi di cooperazione app
  - Il [documento](/npa-fvoe/docs/specifiche-interfacce/documento-specifiche-servizi-npa.md) di sintesi di Specifica delle Interfacce redatto utilizzando il linguaggio di markup Markdown
 
 ## Modello dati
+Il processo di aggiornamento del modello dati è in corso
 Il [file YAML](/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml) contenente la definizione dinamica del modello dati referenziato nelle specifiche dei servizi esposti dalla NPA. *Esempio*:
  ```shell
  StatoLottoEnum:
@@ -35,3 +36,5 @@ Il canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issu
 L’Autorità Nazionale Anticorruzione è sollevata da eventuali responsabilità dovuta:
 - alla mancanza di risposta per richieste pervenute al di fuori dell'unico canale di comunicazione con ANAC rappresentato dalla sezione [Issues](https://github.com/domaltomare/YAML/issues)
 - alla possibile mancanza di risposta per tutte le richieste pervenute nell'apposita sezione Issues o che potrebbero essere di competenza di organizzazioni esterne.
+
+# Roadmap
